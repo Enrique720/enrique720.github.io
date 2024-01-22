@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" integrity="sha384-GLhlTQ8iN17zin9dL0ZC6Qq8iFZ6S8Ku5P5EkpO1C5gPMPmlZbOQ5fl5dPF5nW9w" crossorigin="anonymous">
+    <title>Enrique Sobrados - Personal Website</title>
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <h1>Enrique Sobrados</h1>
+            <img src="photo.png" alt="Your Profile Image" class="profile-image">
+            <p>Cybersecurity Reasearch Assistant - The University of New Mexico</p>
+        </div>
+    </header>
+
+    <div class="tab-bar">
+        <ul class="tabs">
+            <li class="tab" onclick="openTab('about', this)">About</li>
+            <li class="tab" onclick="openTab('resume', this)">Resume</li>
+            <li class="tab" onclick="openTab('projects', this)">Research & Projects</li>
+        </ul>
+    </div>
+
+    <div id="about" class="tab-content">
+        <h2>About Me</h2>
+        <p>I am an enthusiatic computer science student at the University of New Mexico, Albuquerque, NM. I am currently pursuing my master's degree and will start my Ph.D. program in Fall 2024. I am working as a Cybersercurity Research Assistant, advised by Prof. Afsah Anwar. I am passionate about penetration testing, for that reason, you will find me playing a lot in hack the box. 
+</p>
+    </div>
+
+    <div id="resume" class="tab-content">
+        <h2>Education</h2>
+        <p>
+            01/2023 - 05/2025<br>
+            <strong>The University of New Mexico</strong><br>
+            Master of Science in Computer Science<br>
+            I am pursuing a master’s degree in computer science focusing on VPN security applications at The University of New Mexico with an accumulated 4.0+ GPA.
+        </p>
+
+        <p>
+            01/2018 - 12/2023<br>
+            <strong>The University of Engineering and Technology, Lima, Peru</strong><br>
+            Bachelor of Science in Computer Science<br>
+            I started my professional career pursuing an undergraduate degree in computer science. During this period, I obtained strong foundations in cybersecurity, machine learning, software engineering, databases, and operating systems. I managed to maintain myself in the upper fifth of my class. Moreover, I had the opportunity to have an exchange program with UNM, and afterward, I decided to start a master's degree there.
+        </p>
+
+        <h2>Professional Experience</h2>
+        <p>
+            08/2023 - Now<br>
+            <strong>The University of New Mexico</strong><br>
+            Cybersecurity Research Assistant<br>
+            Describe the details of this experience here. Outline the role and responsibilities, highlight your areas of interest, and any other aspects you believe the reader may find particularly enlightening or interesting.
+        </p>
+
+        <p>
+            [Start Date] - [End Date]<br>
+            <strong>[Institution]</strong><br>
+            [Position]<br>
+            Describe the details of this experience here. Outline the role and responsibilities, highlight your areas of interest, and any other aspects you believe the reader may find particularly enlightening or interesting.
+        </p>
+
+        <h2>Other Experiences</h2>
+        <p>
+            [Date]<br>
+            [Experience]<br>
+            Describe the details of this experience here. Outline the role and responsibilities, highlight your areas of interest, and any other aspects you believe the reader may find particularly enlightening or interesting.
+        </p>
+
+        <p>
+            [Date]<br>
+            [Experience]<br>
+            Describe the details of this experience here. Outline the role and responsibilities, highlight your areas of interest, and any other aspects you believe the reader may find particularly enlightening or interesting.
+        </p>
+    </div>
+
+    <div id="projects" class="tab-content">
+        <h2>Research & Projects</h2>
+        <!-- Add your research and projects content here -->
+    </div>
+
+    <div class="footer">
+    <p>esobrados720@unm.edu</p>
+    <p>424-454-7914</p>
+    <p><a href="https://www.linkedin.com/in/enrique-sobrados/" target="_blank"><i class="fab fa-linkedin"></i></a></p>
+</div>
+
+    <script src="https://kit.fontawesome.com/c281d695d1.js" crossorigin="anonymous"></script>
+
+    <script>
+        function openTab(tabName, elmnt) {
+            // Hide all tab contents
+            var tabContents = document.getElementsByClassName("tab-content");
+            for (var i = 0; i < tabContents.length; i++) {
+                tabContents[i].style.display = "none";
+            }
+
+            // Remove "active" class from all tabs
+            var tabs = document.getElementsByClassName("tab");
+            for (var i = 0; i < tabs.length; i++) {
+                tabs[i].classList.remove("active");
+            }
+
+            // Show the selected tab content and mark the tab as active
+            document.getElementById(tabName).style.display = "block";
+            elmnt.classList.add("active");
+        }
+
+        // Set the default tab (About) as active
+        document.getElementsByClassName("tab")[0].click();
+    </script>
+
+</body>
+</html>
