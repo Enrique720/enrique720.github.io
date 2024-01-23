@@ -1,5 +1,5 @@
 body {
-    font-family: 'Roboto', sans-serif;
+    font-family: Georgia, serif;
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,10 +11,10 @@ body {
     align-items: center;
     background-color: #333;
     color: #fff;
-    background-image: url('background.jpg');
+    background-image: url('imgs/background.jpg');
     background-size: cover;
     background-size: 100% 100%;
-    text-align: center;
+    text-align: justify;
     padding: 20px;
 }
 
@@ -22,6 +22,17 @@ body {
     width: 200px;
     border-radius: 50%;
     margin-top: 10px;
+}
+
+.conference{
+    display: flex;
+    align-items: center;    
+}
+
+.conference img{
+    height: 50%;
+    width: 50%;
+    margin-right: 40px;
 }
 
 .tabs {
@@ -56,7 +67,7 @@ body {
     padding: 20px;
     background-color: #eee;
     margin-top: -1px; /* to align with the tab bar */
-    text-align: left; /* Left-align the content within tabs */
+    text-align: justify; /* Left-align the content within tabs */
     width: 50%; /* Set the width of the content container to 50% */
     padding: 50px 50px;
     margin: 0 auto; /* Center the content container horizontally */
@@ -78,7 +89,6 @@ body {
     margin: 2px 0;
 }
 
-
 /* LinkedIn icon styling */
 .fa-linkedin {
     color: #0077B5; /* LinkedIn blue color */
@@ -91,4 +101,6 @@ body {
     color: #004182; /* Change to the desired hover color */
 }
 
-
+.news {
+    margin-top: 10px;
+}
