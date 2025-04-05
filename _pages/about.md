@@ -7,21 +7,20 @@ redirect_from:
   - /about.html
 ---
 
-I am a motivated Ph.D. student at The University of New Mexico. 
+I am a motivated first-year Ph.D. student at [The University of New Mexico](https://unm.edu), Albuquerque, NM. I started my Ph.D. program in Fall 2024. I am very passionate about cybersecurity, being penetration testing one of my favorite fields. For that reason, you will find me playing a lot in Hack the Box.
 
-
-A data-driven personal website
+Research
 ======
-Like many other Jekyll-based GitHub Pages templates, Academic Pages makes you separate the website's content from its form. The content & metadata of your website are in structured markdown files, while various other files constitute the theme, specifying how to transform that content & metadata into HTML pages. You keep these various markdown (.md), YAML (.yml), HTML, and CSS files in a public GitHub repository. Each time you commit and push an update to the repository, the [GitHub pages](https://pages.github.com/) service creates static HTML pages based on these files, which are hosted on GitHub's servers free of charge.
-
-Many of the features of dynamic content management systems (like Wordpress) can be achieved in this fashion, using a fraction of the computational resources and with far less vulnerability to hacking and DDoSing. You can also modify the theme to your heart's content without touching the content of your site. If you get to a point where you've broken something in Jekyll/HTML/CSS beyond repair, your markdown files describing your talks, publications, etc. are safe. You can rollback the changes or even delete the repository and start over - just be sure to save the markdown files! Finally, you can also write scripts that process the structured data on the site, such as [this one](https://github.com/academicpages/academicpages.github.io/blob/master/talkmap.ipynb) that analyzes metadata in pages about talks to display [a map of every location you've given a talk](https://academicpages.github.io/talkmap.html).
-
-
-======
-
+I am working as a Research Assistant, advised by [Prof. Afsah Anwar](https://afsah.org) at UNM. As an RA, my main research focus is mobile security in Virtual Private Networks (VPN). In this research, I focus on identifying security concerns within VPN application. Moreover, I am actively engaged with the cybersecurity community at UNM, where I lead a Cybersecurity group that actively participate in CTF competitions.
 
 
 Updates
 ------
-- Aug 2024: Attended Usenix Security Symposium
-- 
+- August 2024: Attended USENIX Security 24 conference
+- August 2024: Started my Ph.D. program in Computer Science at UNM
+- December 2023: Obtained the 1st place in the Tracer Fire workshop held during ACSAC conference in Austin, Texas.
+- December 2023: Won a conferenship award to attend the ACSAC conference 2023 held in Austin, Texas.
+- August 2023: Joined the BeyondDefense Lab directed by  [Ph.D. Afsah Anwar](https://afsah.org).
+- January 2023: Started studying a master of science in computer science at The University of New Mexico.
+- July 2022: Joined the information security team at the National Bank for an internship.
+- January 2022: Started a one semester exchange program at the University of New Mexico.
