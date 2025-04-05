@@ -209,6 +209,26 @@
     </ul>
   </div>
   {% endif %}
+
+  {% if cv.certifications.size > 0 %}
+  <!-- Certifications -->
+  <div class="cv-section">
+    <h2>Certifications</h2>
+    <ul class="cv-list">
+      {% for certification in cv.certifications %}
+      <li class="cv-item">
+        <div class="cv-item-header">
+          <div class="cv-item-title">{{ certification.name }}</div>
+          <div class="cv-item-date">{{ certification.date | slice: 0, 4 }}</div>
+        </div>
+        <div class="cv-item-content">
+          <div class="cv-item-subtitle">{{ certification.institution }}</div>
+        </div>
+      </li>
+      {% endfor %}
+    </ul>
+  </div>
+  {% endif %}
   
   {% if cv.portfolio.size > 0 %}
   <!-- Portfolio -->
@@ -282,9 +302,19 @@
       {% for reference in cv.references %}
       <li class="cv-item">
         <div class="cv-item-content">
-          <div class="cv-item-title">{{ reference.name }}</div>
+          <div class="cv-item-title">
+            {% if reference.reference_url %}
+              <a href="{{ reference.reference_url }}">
+                {{ reference.name }} 
+              </a>
+            {% else %}
+              {{ reference.name }}
+            {% endif %}
+          </div>
           {% if reference.reference %}
-          <div class="cv-item-detail">{{ reference.reference }}</div>
+          <div class="cv-item-detail">
+            {{ reference.reference }}
+          </div>
           {% endif %}
         </div>
       </li>

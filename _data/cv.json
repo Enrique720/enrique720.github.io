@@ -1,69 +1,119 @@
 {
   "basics": {
-    "name": "Your Sidebar Name",
-    "email": "none@example.org",
-    "phone": "",
-    "website": "https://academicpages.github.io",
-    "summary": "Currently employed at Red Brick University. Short biography for the left-hand sidebar",
+    "name": "Enrique Sobrados",
+    "email": "enrique.sobrados@gmail.com",
+    "phone": "+1 (424) 454-7914",
+    "website": "https://enrique720.github.io",
+    "summary": "Research Assistant at UNM.",
     "location": {
-      "address": "",
-      "postalCode": "",
-      "city": "Earth",
+      "address": "Building, #119",
+      "postalCode": "87131",
+      "city": "Albuquerque",
       "countryCode": "US",
-      "region": ""
+      "region": "NM"
     },
     "profiles": [
       {
         "network": "Google Scholar",
         "username": "",
-        "url": "https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
+        "url": "https://scholar.google.com/"
       },
       {
         "network": "ORCID",
         "username": "",
-        "url": "http://orcid.org/yourorcidurl"
+        "url": "http://orcid.org/"
       },
       {
         "network": "GitHub",
-        "username": "academicpages",
-        "url": "https://github.com/academicpages"
+        "username": "enrique720",
+        "url": "https://github.com/enrique720"
       }
     ]
   },
-  "work": [],
+  "work": [
+    {
+      "company": "University of New Mexico",
+      "position": "Research Assistant",
+      "startDate": "2023-07",
+      "endDate": "Now",
+      "summary": "Conducting research in the field of cybersecurity, focusing on mobile application security and VPN vulnerabilities.",
+      "highlights": [
+        "Performed mobile penetration testing on Android applications and identified weak implementations.",
+        "Researched VPN security issues in South Asia, analyzing regional cyber threats and vulnerabilities",
+        "Automated data collection on top 30 VPN apps used in South Asia, streamlining analysis.",
+        "Built a dynamic analysis infrastructure using Virtual Machines and networks to simulate real-world scenarios.",
+        "Conducted comprehensive analysis of VPN apps, using reverse engineering and transparent proxies."
+      ]
+    },
+    {
+      "company": "National Bank, Peru",
+      "position": "Security Analyst Internship",
+      "startDate": "2022-07",
+      "endDate": "2022-12",
+      "summary": "Worked as a Security Analyst Intern at the National Bank of Peru, focusing on enhancing the bank's cybersecurity posture and internal processes.",
+      "highlights": [
+        "Managed VPN and web filtering systems, securing access to critical bank resources.",
+        "Conducted research to identify and document security vulnerabilities, offering remediation strategies.",
+        "Streamlined internal processes, improving workflow and resource utilization.",
+        "Provided insights during perimeter security meetings to address emerging threats.",
+        "Evaluated and implemented web filtering and EDR cloud solutions through proof of concepts.",
+        "Generated cryptographic keys for ATMs, ensuring secure financial transactions."
+      ]
+    }
+  ],
   "education": [
     {
-      "institution": "GitHub University",
-      "area": "Ph.D in Version Control Theory",
+      "institution": "University of New Mexico",
+      "area": "Ph.D in Computer Science",
       "studyType": "",
       "startDate": "",
-      "endDate": "2018",
+      "endDate": "2027 (expected)",
       "gpa": null,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "M.S. in Jekyll",
+      "institution": "University of New Mexico",
+      "area": "M.S. in Computer Science",
       "studyType": "",
       "startDate": "",
-      "endDate": "2014",
-      "gpa": null,
+      "endDate": "2025",
+      "gpa": 4.00,
       "courses": []
     },
     {
-      "institution": "GitHub University",
-      "area": "B.S. in GitHub",
+      "institution": "University of Engineering and Technology",
+      "area": "B.S. in Computer Science",
       "studyType": "",
       "startDate": "",
-      "endDate": "2012",
-      "gpa": null,
+      "endDate": "2024",
+      "gpa": 3.8,
       "courses": []
     }
   ],
-  "skills": [],
-  "languages": [],
+  "skills": [
+
+  ],
+  "languages": [
+    {
+      "language": "English",
+      "fluency": "Proficient"
+    },
+    {
+      "language": "Spanish",
+      "fluency": "Native"
+    },
+    {
+      "language": "German",
+      "fluency": "Basic"
+    }
+  ],
   "interests": [],
-  "references": [],
+  "references": [
+    {
+      "name": "Dr. Afsah Anwar",
+      "reference_url": "https://afsah.org"
+    }
+  ],
   "publications": [
     {
       "name": "Paper Title Number 1",
@@ -71,27 +121,6 @@
       "releaseDate": "2009-10-01",
       "website": "http://academicpages.github.io/files/paper1.pdf",
       "summary": "This paper is about the number 1. The number 2 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 2",
-      "publisher": "Journal 1",
-      "releaseDate": "2010-10-01",
-      "website": "http://academicpages.github.io/files/paper2.pdf",
-      "summary": "This paper is about the number 2. The number 3 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 3",
-      "publisher": "Journal 1",
-      "releaseDate": "2015-10-01",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about the number 3. The number 4 is left for future work."
-    },
-    {
-      "name": "Paper Title Number 4",
-      "publisher": "GitHub Journal of Bugs",
-      "releaseDate": "2024-02-17",
-      "website": "http://academicpages.github.io/files/paper3.pdf",
-      "summary": "This paper is about fixing template issue #693."
     }
   ],
   "presentations": [
@@ -108,45 +137,18 @@
       "date": "2013-03-01",
       "location": "Berkeley, CA, USA",
       "description": ""
-    },
-    {
-      "name": "Talk 2 on Relevant Topic in Your Field",
-      "event": "London School of Testing",
-      "date": "2014-02-01",
-      "location": "London, UK",
-      "description": ""
-    },
-    {
-      "name": "Conference Proceeding talk 3 on Relevant Topic in Your Field",
-      "event": "Testing Institute of America 2014 Annual Conference",
-      "date": "2014-03-01",
-      "location": "Los Angeles, CA, USA",
-      "description": ""
     }
   ],
-  "teaching": [
+  "certifications": [
     {
-      "course": "Teaching experience 1",
-      "institution": "University 1, Department",
-      "date": "2014-01-01",
-      "role": "Undergraduate course",
-      "description": ""
+      "name": "Junior Penetration Tester (eJPTv2)",
+      "date": "2024-04-18",
+      "institution": "INE Security"
     },
     {
-      "course": "Teaching experience 2",
-      "institution": "University 1, Department",
-      "date": "2015-01-01",
-      "role": "Workshop",
-      "description": ""
-    }
-  ],
-  "portfolio": [
-    {
-      "name": "Portfolio item number 1",
-      "category": "portfolio",
-      "date": "",
-      "url": "",
-      "description": "Short description of portfolio item number 1<br/><img src='/images/500x300.png'>"
+      "name": "PEN, SOC, WEB - 100",
+      "date": "2023-10-16",
+      "institution": "Offensive Security"
     }
   ]
 }
