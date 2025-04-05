@@ -569,3 +569,7 @@ border-radius: .1em;
 .ai-inverse {
   color: #fff;
 }
+
+.object-fit-cover{
+  object-fit: cover !important;
+}

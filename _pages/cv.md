@@ -11,9 +11,9 @@ redirect_from:
 
 Education
 ======
-* Ph.D in Version Control Theory, GitHub University, 2018 (expected)
-* M.S. in Jekyll, GitHub University, 2014
-* B.S. in GitHub, GitHub University, 2012
+* Ph.D in Computer Science, University of New Mexico, 2027 (expected)
+* M.S. in Computer Science, University of New Mexico, 2025
+* B.S. in Computer Science, University of Engineering and Technology, 2024
 
 Work experience
 ======
