@@ -13,7 +13,7 @@ title                    : "Enrique Sobrados"
 title_separator          : "-"
 name                     : &name "Enrique Sobrados"
 description              : &description "Ph.D. student in Computer Science at UNM, specializing in cybersecurity. This is my personal website where I share my research, publications, and projects."
-url                      : https://enrique720.github.io # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
+url                      : https://esobrados.com # the base hostname & protocol for your site e.g. "https://[your GitHub username].github.io"
 baseurl                  : "" # the subpath of your site, e.g. "/blog"
 repository               : "enrique720/enrique720.github.io"
 
