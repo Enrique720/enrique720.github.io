@@ -7,15 +7,15 @@ tags:
   - volunteer
 ---
 
-I often like to do extracurricular activities to help the science community. This time I volunteer for the Center for the Water and Environment (CWE) and helped in an outreach activity
+I often like to participate in extracurricular activities to help the scientific community. This time, I volunteered for the Center for Water and the Environment (CWE) and helped in an outreach activity.
 
 
 Activity
 ======
-The Center for the Water and Environment is an organization at UNM that aims to impact the planet by developing novel techniques to treat and analyze water bodies. 
+The Center for Water and the Environment is an organization at UNM that aims to impact the planet by developing novel techniques to treat and analyze water bodies.
 
-This year, I volunteered for an outreach activity at the National Museum of Nuclear Science & History, where I helped the CWE team to explain science to little kids.
+This year, I volunteered for an outreach activity at the National Museum of Nuclear Science & History, where I helped the CWE team explain science to little kids.
 
-It was a nice activity and felt the joy of children, happy to help again!
+It was a great activity, and I felt the joy of the children—happy to help again!
 
 ![Outreach image](/images/blogs/cwe_outreach.jpeg "Outreach Event")

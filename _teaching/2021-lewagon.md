@@ -9,16 +9,15 @@ location: "Remote, Chile"
 ---
 
 
-At Le Wagon, I performed as a Bootcamp teacher, and workshop tutor.
-
+At Le Wagon, I worked as a Bootcamp teacher and workshop tutor.
 
 Ruby-On-Rails
 ======
-I gave lectures and answered questions in Slack in the following topics:
+I gave lectures and answered questions on Slack on the following topics:
 - Front End
 - HTML, CSS, JS
-- Bootstrap  
+- Bootstrap
 
 Git/Github
 ======
-I performed several Git workshops to help students work collectively in an organized manner.
+I conducted several Git workshops to help students collaborate in an organized manner.
