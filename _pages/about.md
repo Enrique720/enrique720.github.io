@@ -7,7 +7,7 @@ redirect_from:
   - /about.html
 ---
 
-I am a motivated first-year Ph.D. student at [The University of New Mexico](https://unm.edu), Albuquerque, NM. I started my Ph.D. program in Fall 2024. I am very passionate about cybersecurity, with penetration testing being one of my favorite fields. For that reason, you will find me playing a lot on Hack the Box.
+I am a motivated second year Ph.D. student at [The University of New Mexico](https://unm.edu), Albuquerque, NM. I started my Ph.D. program in Fall 2024. I am very passionate about cybersecurity, with penetration testing being one of my favorite fields. For that reason, you will find me playing a lot on Hack the Box.
 
 Research
 ======
