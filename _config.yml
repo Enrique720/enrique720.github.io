@@ -28,14 +28,14 @@ author:
   bio              : "Ph.D. student in Computer Science at UNM"
   location         : "Albuquerque, NM" # e.g. "Albuquerque, NM"
   employer         : "University of New Mexico" # e.g. "The University of New Mexico"
-  uri              : "https://esobrados.com" # Your personal website or blog URL
+  #uri              : "https://esobrados.com" # Your personal website or blog URL
   email            : "enrique.sobrados@gmail.com" 
 
   # Academic websites
   arxiv            : # URL - Update with the correct link to your profile
   googlescholar    : #"https://scholar.google.com/citations?user=PS_CX0AAAAAJ"
   impactstory      : # URL
-  orcid            : #"http://orcid.org/yourorcidurl"
+  orcid            : "https://orcid.org/0009-0009-6864-3911"
   semantic         : # URL
   pubmed           : #"https://www.ncbi.nlm.nih.gov/pubmed/?term=john+snow"
   researchgate     : # URL
