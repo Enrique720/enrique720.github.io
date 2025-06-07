@@ -30,35 +30,18 @@
       }
     ]
   },
-  "work": [
+  "publications": [
     {
-      "company": "University of New Mexico",
-      "position": "Research Assistant",
-      "startDate": "2023-07",
-      "endDate": "Now",
-      "summary": "Conducting research in the field of cybersecurity, focusing on mobile application security and VPN vulnerabilities.",
-      "highlights": [
-        "Performed mobile penetration testing on Android applications and identified weak implementations.",
-        "Researched VPN security issues in South Asia, analyzing regional cyber threats and vulnerabilities",
-        "Automated data collection on top 30 VPN apps used in South Asia, streamlining analysis.",
-        "Built a dynamic analysis infrastructure using Virtual Machines and networks to simulate real-world scenarios.",
-        "Conducted comprehensive analysis of VPN apps, using reverse engineering and transparent proxies."
-      ]
+      "name": "Trusted Software, hidden threats: Multi-Vector Supply Chain Attacks Using Coordinated and Independent Components in Small Satellite",
+      "releaseDate": "2026",
+      "summary": "Introduced a novel attack vector in small satellite systems, demonstrating how independent components can be exploited to create coordinated supply chain attacks.",
+      "publisher": "In Submission: IEEE Symposium on Security and Privacy, 2026"
     },
     {
-      "company": "National Bank, Peru",
-      "position": "Security Analyst Internship",
-      "startDate": "2022-07",
-      "endDate": "2022-12",
-      "summary": "Worked as a Security Analyst Intern at the National Bank of Peru, focusing on enhancing the bank's cybersecurity posture and internal processes.",
-      "highlights": [
-        "Managed VPN and web filtering systems, securing access to critical bank resources.",
-        "Conducted research to identify and document security vulnerabilities, offering remediation strategies.",
-        "Streamlined internal processes, improving workflow and resource utilization.",
-        "Provided insights during perimeter security meetings to address emerging threats.",
-        "Evaluated and implemented web filtering and EDR cloud solutions through proof of concepts.",
-        "Generated cryptographic keys for ATMs, ensuring secure financial transactions."
-      ]
+      "name": "MVPNalyzer: An Investigative Framework for the Security & Privacy Audit of Mobile VPNs",
+      "releaseDate": "2026",
+      "summary": "Developed a comprehensive framework for auditing the security and privacy of mobile VPN applications, focusing on traffic leaks, obfuscation, and VPN misconfiguration.",
+      "publisher": "In Submission: Network and Distributed System Security Symposium (NDSS), 2026"
     }
   ],
   "education": [
@@ -90,6 +73,37 @@
       "courses": []
     }
   ],
+  "work": [
+    {
+      "company": "University of New Mexico",
+      "position": "Research Assistant",
+      "startDate": "2023-07",
+      "endDate": "Now",
+      "summary": "Conducting research in the field of cybersecurity, focusing on mobile application security and VPN vulnerabilities.",
+      "highlights": [
+        "Performed mobile penetration testing on Android applications and identified weak implementations.",
+        "Researched VPN security issues in South Asia, analyzing regional cyber threats and vulnerabilities",
+        "Automated data collection on top 30 VPN apps used in South Asia, streamlining analysis.",
+        "Built a dynamic analysis infrastructure using Virtual Machines and networks to simulate real-world scenarios.",
+        "Conducted comprehensive analysis of VPN apps, using reverse engineering and transparent proxies."
+      ]
+    },
+    {
+      "company": "National Bank, Peru",
+      "position": "Security Analyst Internship",
+      "startDate": "2022-07",
+      "endDate": "2022-12",
+      "summary": "Worked as a Security Analyst Intern at the National Bank of Peru, focusing on enhancing the bank's cybersecurity posture and internal processes.",
+      "highlights": [
+        "Managed VPN and web filtering systems, securing access to critical bank resources.",
+        "Conducted research to identify and document security vulnerabilities, offering remediation strategies.",
+        "Streamlined internal processes, improving workflow and resource utilization.",
+        "Provided insights during perimeter security meetings to address emerging threats.",
+        "Evaluated and implemented web filtering and EDR cloud solutions through proof of concepts.",
+        "Generated cryptographic keys for ATMs, ensuring secure financial transactions."
+      ]
+    }
+  ], 
   "skills": [
     {
       "name": "Penetration Testing",
@@ -150,9 +164,7 @@
       "name": "Dr. Afsah Anwar",
       "reference_url": "https://afsah.org"
     }
-  ],
-  "publications": [
-  ],
+  ], 
   "presentations": [
   ],
   "certifications": [
