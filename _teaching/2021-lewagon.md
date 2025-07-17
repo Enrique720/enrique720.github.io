@@ -8,8 +8,7 @@ date: 2021-07-01
 location: "Remote, Chile"
 ---
 
-
-At Le Wagon, I worked as a Bootcamp teacher and workshop tutor.
+At Le Wagon, I worked as a Bootcamp teacher and workshop tutor for their intensive Web Development Bootcamp. This program is designed to teach students the fundamentals of web development, covering both front-end and back-end technologies, and preparing them for real-world software engineering roles.
 
 Ruby-On-Rails
 ======

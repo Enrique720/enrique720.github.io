@@ -1,5 +1,5 @@
 ---
-title: 'Outreach Activity'
+title: 'Outreach Volunteer'
 date: 2025-02-15
 permalink: /posts/2025/02/cwe-outreach/
 tags:
