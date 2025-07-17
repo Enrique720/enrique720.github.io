@@ -1,6 +1,6 @@
 ---
 title: "Tracer Fire CTF Winner!"
-excerpt: "Obtained first place in the CTF held by Sandia National Laboratories!<br/><img src='/images/portfolio/conference.jpeg' class='object-fit-cover' style='width: 550px; height:300px;'>"
+excerpt: "Obtained first place in the CTF held by Sandia National Laboratories!<br/><img src='/images/portfolio/conference.jpeg' class='object-fit-cover bordered-img' style='width: 550px; height:300px;'>"
 collection: portfolio
 ---
 
@@ -8,4 +8,6 @@ During the Annual Computer Security Applications Conference (ACSAC), I participa
 
 After two long days of continuous trying and finding, my team and I were able to obtain first place! We had a very good time and enjoyed finding those flags! Thank you Mike and Lorenzo! Below is a picture of the great experience.
 
-![CVE Image](/images/portfolio/conference.jpeg "CVE")
+
+
+<img src="/images/portfolio/conference.jpeg" alt="CVE Image" title="CVE Image" class="bordered-img">

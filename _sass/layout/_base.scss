@@ -14,7 +14,7 @@ body {
 
   margin: 0;
   padding: $masthead-height 0 0;
-  padding-bottom: 9em;
+  padding-bottom: 2em;
   font-family: $global-font-family;
   line-height: 1.5;
 
@@ -363,3 +363,22 @@ b, i, strong, em, blockquote, p, q, span, figure, img, h1, h2, header, input, a,
       display: none;
     }
   }
+
+.responsive-img {
+  max-width: 50%;
+  width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+@media (max-width: 700px) {
+  .responsive-img {
+    max-width: 100%;
+  }
+}
+
+.bordered-img{
+  margin-top: 1em;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}

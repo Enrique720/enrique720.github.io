@@ -12,18 +12,3 @@ I am volunteering with the Bosque Buddies Animal Rescue organization to help fos
 Below a picture of Penny and me during a coding session:
 
 <img src="/images/blogs/penny.jpeg" alt="Penny the puppy" title="Penny the puppy" class="responsive-img">
-
-<style>
-.responsive-img {
-  max-width: 50%;
-  width: 100%;
-  height: auto;
-  border-radius: 8px;
-  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-}
-@media (max-width: 700px) {
-  .responsive-img {
-    max-width: 100%;
-  }
-}
-</style>

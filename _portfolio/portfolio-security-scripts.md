@@ -1,6 +1,6 @@
 ---
 title: "Security Scripts Collection"
-excerpt: "A curated set of commands for automating common security tasks, vulnerability checks, and penetration testing workflows. <br/><img src='/images/portfolio/Security_scripts.png' class='object-fit-cover' style='width: 550px; height:300px;'>"
+excerpt: "A curated set of commands for automating common security tasks, vulnerability checks, and penetration testing workflows. <br/><img src='/images/portfolio/Security_scripts.png' class='object-fit-cover bordered-img' style='width: 550px; height:300px;'>"
 collection: portfolio
 ---
 

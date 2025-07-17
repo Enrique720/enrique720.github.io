@@ -18,4 +18,4 @@ This year, I volunteered for an outreach activity at the National Museum of Nucl
 
 It was a great activity, and I felt the joy of the children—happy to help again!
 
-![Outreach image](/images/blogs/cwe_outreach.jpeg "Outreach Event")
+<img src="/images/blogs/cwe_outreach.jpeg" alt="CWE Outreach Event" title="CWE Outreach Event" class="bordered-img">
