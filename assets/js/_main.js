@@ -96,7 +96,6 @@ $(document).ready(function () {
     midClick: true // allow opening popup on middle mouse click. Always set it to true if you don't provide alternative source.
   });
 
- 
   $('#author-avatar-img')
     .on('mouseenter', function() {
       $(this).data('original-src', $(this).attr('src'));
@@ -104,8 +103,8 @@ $(document).ready(function () {
     })
     .on('mouseleave', function() {
       $(this).attr('src', $(this).data('original-src'));
-    });
-  
+    });  
+ 
 });
 
 
