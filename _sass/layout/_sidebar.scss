@@ -102,6 +102,11 @@
       border: 1px solid var(--global-border-color);
     }
   }
+
+  img:hover {
+    -webkit-transform: scale(1.05);
+            transform: scale(1.05);
+  }
 }
 
 .author__content {
