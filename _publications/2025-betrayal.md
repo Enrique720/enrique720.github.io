@@ -5,7 +5,7 @@ category: conferences
 permalink: /publication/2026-satmal
 excerpt: ''
 date: 2026-05-18
-venue: ''
+venue: '[TBD]'
 #paperurl: 'http://academicpages.github.io/files/paper3.pdf'
 #citation: 'Sobrados, Enrique. (2026).'
 ---
