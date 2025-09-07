@@ -14,11 +14,16 @@ Research
 I am working as a Research Assistant, advised by [Prof. Afsah Anwar](https://afsah.org) at UNM. As an RA, my main research focus is mobile security in Virtual Private Networks (VPN). In this research, I focus on identifying security concerns within VPN applications. Moreover, I am actively engaged with the cybersecurity community at UNM, where I lead a cybersecurity group that actively participates in CTF competitions.
 
 Updates
-------
-- August 2024: Attended USENIX Security 24 conference  
-- August 2024: Started my Ph.D. program in Computer Science at UNM  
-- December 2023: Obtained 1st place in the Tracer Fire workshop held during the ACSAC conference in Austin, Texas.  
-- December 2023: Won a conferenship award to attend the ACSAC Conference 2023 held in Austin, Texas.  
+-------
+- September 2025: Gave a colloquium talk at the University of New Mexico, presenting my research on VPN security.
+- September 2025: Paper accepted at the Network and Distributed System Security Symposium (NDSS) 2026 conference, see you in San Diego!
+- May 2025: Started a CTF group at UNM, come and [join us](https://discord.gg/XTRX2BPy)!
+- March 2025: Gave a guest lecture at the University of New Mexico on "Introduction to Penetration Testing". 
+- September 2024: Visited the University of Michigan, Ann Arbor, for a research collaboration.
+- August 2024: Attended USENIX Security 24 conference.
+- August 2024: Started the Ph.D. program in Computer Science at UNM.
+- December 2023: Obtained 1st place in the Tracer Fire workshop held during the ACSAC conference in Austin, Texas.
+- December 2023: Won a conferenship award to attend the ACSAC Conference 2023 held in Austin, Texas.
 - August 2023: Joined the BeyondDefense Lab directed by [Dr. Afsah Anwar](https://afsah.org).
 - January 2023: Started studying a Master of Science in Computer Science at The University of New Mexico.
 - July 2022: Joined the information security team at the National Bank for an internship.
