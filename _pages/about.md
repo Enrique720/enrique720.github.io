@@ -16,9 +16,10 @@ I am working as a Research Assistant, advised by [Prof. Afsah Anwar](https://afs
 Updates
 -------
 - January 2026: I was awarded the NDSS 2026 fellowship, see you in San Diego!
+- December 2025: LoboSec CTF team obtained 3rd place in Alamo CTF 2025!
 - September 2025: Gave a colloquium talk at the University of New Mexico, presenting my research on VPN security.
 - September 2025: Paper on VPN Security accepted at the Network and Distributed System Security Symposium (NDSS) 2026 conference!
-- May 2025: Started a CTF group at UNM, come and [join us](https://lobosec.unm.edu)!
+- May 2025: Started a CTF group at UNM, come and join [lobosec](https://lobosec.unm.edu)!
 - March 2025: Gave a guest lecture at the University of New Mexico on "Introduction to Penetration Testing". 
 - September 2024: Visited the University of Michigan, Ann Arbor, for a research collaboration.
 - August 2024: Attended USENIX Security 24 conference.
