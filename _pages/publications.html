@@ -1,6 +1,8 @@
 ---
 layout: archive
 title: "Publications"
+eyebrow: "Research output"
+description: "Peer-reviewed work, manuscripts, and research artifacts from my security research."
 permalink: /publications/
 author_profile: true
 ---
@@ -23,14 +25,12 @@ author_profile: true
         <h2>{{ category[1].title }}</h2><hr />
         {% assign title_shown = true %}
       {% endunless %}
-      {% include archive-single.html %}
+      {% include archive-single.html publication=true %}
     {% endfor %}
   {% endfor %}
 {% else %}
   {% for post in site.publications reversed %}
-    {% include archive-single.html %}
+    {% include archive-single.html publication=true %}
   {% endfor %}
 {% endif %}
-
-
 

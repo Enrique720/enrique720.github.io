@@ -13,7 +13,7 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="archive__item{% if post.collection == 'publications' or include.publication %} publication-card{% else %} listing-card{% endif %}" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
@@ -33,51 +33,44 @@
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
-    
-    {% if post.read_time %}
-      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
-    {% endif %}
 
-        {% if post.collection == 'teaching' %}
-          <p> {{ post.type }}, <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.collection == 'publications' %}
-          <p>Published in <i>{{ post.venue }}</i>, {{ post.date | default: "1900-01-01" | date: "%Y" }} </p>
-        {% elsif post.date %}
-         <p class="page__date"><strong><i class="fa fa-fw fa-calendar" aria-hidden="true"></i> {{ site.data.ui-text[site.locale].date_label | default: "Published:" }}</strong> <time datetime="{{ post.date | default: "1900-01-01" | date_to_xmlschema }}">{{ post.date | default: "1900-01-01" | date: "%B %d, %Y" }}</time></p>
+    {% if post.collection == 'publications' or include.publication %}
+      <div class="publication-card__meta">
+        {% if post.venue %}<span><i class="fa-solid fa-book-open" aria-hidden="true"></i>{{ post.venue }}</span>{% endif %}
+        {% if post.date %}<span><i class="fa-solid fa-calendar" aria-hidden="true"></i>{{ post.date | default: "1900-01-01" | date: "%B %Y" }}</span>{% endif %}
+      </div>
+      {% if post.paperurl %}
+        <div class="publication-card__links" aria-label="Publication links">
+          <a href="{{ post.paperurl }}"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>Paper</a>
+        </div>
+      {% endif %}
+    {% else %}
+      <div class="listing-card__meta">
+        {% if post.type %}
+          <span>
+            {% if post.type == "GitHub" %}
+              <i class="fa-brands fa-github" aria-hidden="true"></i>
+            {% elsif post.type == "CTF" %}
+              <i class="fa-solid fa-flag" aria-hidden="true"></i>
+            {% else %}
+              <i class="fa-solid fa-tag" aria-hidden="true"></i>
+            {% endif %}
+            {{ post.type }}
+          </span>
         {% endif %}
+        {% if post.venue %}<span><i class="fa-solid fa-building-columns" aria-hidden="true"></i>{{ post.venue }}</span>{% endif %}
+        {% if post.location %}<span><i class="fa-solid fa-location-dot" aria-hidden="true"></i>{{ post.location }}</span>{% endif %}
+        {% if post.date %}<span><i class="fa-solid fa-calendar" aria-hidden="true"></i>{{ post.date | default: "1900-01-01" | date: "%B %Y" }}</span>{% endif %}
+        {% if post.read_time %}<span><i class="fa-solid fa-clock" aria-hidden="true"></i>{% include read-time.html %}</span>{% endif %}
+      </div>
 
-    {% if post.excerpt and site.read_more != 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>
-    {% elsif post.excerpt and site.read_more == 'enabled' %}
-    <p class="archive__item-excerpt" itemprop="description"><p>{{ post.excerpt | markdownify | remove: '<p>' | remove: '</p>' }}<strong><a href="{{ base_path }}{{ post.url }}" rel="permalink"> Read more</a></strong></p></p>
-    {% endif %}
-    
-    {% if post.citation and post.paperurl and post.slidesurl and post.bibtexurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
-    {% elsif post.citation and post.paperurl and post.slidesurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.slidesurl }}">Download Slides</a></p>
-    {% elsif post.citation and post.paperurl and post.bibtexurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
-    {% elsif post.citation and post.paperurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.paperurl }}">Download Paper</a></p>
-    {% elsif post.citation and post.slidesurl and post.bibtexurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl}}">Download Bibtex</a></p>
-    {% elsif post.citation and post.slidesurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.slidesurl }}">Download Slides</a></p>
-    {% elsif post.citation and post.bibtexurl %}
-      <p>Recommended citation: {{ post.citation }}<br /><a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
-    {% elsif post.citation %}
-      <p>Recommended citation: {{ post.citation }}</p>
-    {% elsif post.paperurl and post.bibtexurl %}
-      <p><a href=" {{ post.paperurl }} ">Download Paper</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
-    {% elsif post.paperurl %}
-      <p><a href=" {{ post.paperurl }} ">Download Paper</a></p>
-    {% elsif post.slidesurl and post.bibtexurl %}
-      <p><a href="{{ post.slidesurl }}">Download Slides</a> | <a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
-    {% elsif post.slidesurl %}
-      <p><a href="{{ post.slidesurl }}">Download Slides</a></p>
-    {% elsif post.bibtexurl %}
-      <p><a href="{{ post.bibtexurl }}">Download Bibtex</a></p>
+      {% if post.excerpt %}
+        <div class="archive__item-excerpt listing-card__excerpt" itemprop="description">{{ post.excerpt | markdownify }}</div>
+      {% endif %}
+
+      <div class="listing-card__links">
+        <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>Details</a>
+      </div>
     {% endif %}
 
   </article>

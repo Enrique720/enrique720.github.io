@@ -1,53 +1,23 @@
 {% include base_path %}
 
-<style>
-
-.mb-0 {
-  margin-bottom: 0 !important;
-}
-
-.site-footer {
-  text-align: center;
-}
-.footer-social-icons {
-  display: flex;
-  justify-content: center;
-  gap: 1rem;
-  font-size: 1.5rem;
-  list-style: none;
-  padding: 0;
-  margin: 0;
-}
-.footer-social-icons i {
-  color: #222 !important;
-  transition: color 0.2s;
-}
-.footer-social-icons i:hover {
-  color: #2980b9 !important;
-}
-.page__footer-copyright {
-  color: #222 !important;
-}
-</style>
-
 <footer class="site-footer">
   <ul class="footer-social-icons">
     {% if site.author.github %}
-      <li class="mb-0">
+      <li>
         <a href="https://github.com/{{ site.author.github }}" target="_blank" rel="noopener" aria-label="GitHub">
           <i class="fab fa-github"></i>
         </a>
       </li>
     {% endif %}
     {% if site.author.linkedin %}
-      <li class="mb-0">
+      <li>
         <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">
           <i class="fab fa-linkedin"></i>
         </a>
       </li>
     {% endif %}
     {% if site.author.twitter %}
-      <li class="mb-0">
+      <li>
         <a href="https://twitter.com/{{ site.author.twitter }}" target="_blank" rel="noopener" aria-label="Twitter">
           <i class="fab fa-twitter"></i>
         </a>
@@ -55,6 +25,6 @@
     {% endif %}
   </ul>
   <div class="page__footer-copyright">
-    &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. All rights reserved.<br />
+    &copy; {{ site.time | date: '%Y' }} {{ site.name | default: site.title }}. All rights reserved.
   </div>
 </footer>

@@ -15,9 +15,11 @@ layout: default
 <div id="main" role="main">
   {% include sidebar.html %}
 
-  <div class="archive">
+  <div class="archive security-card rounded-lg border border-slate-700/50 bg-slate-950/62 p-5 shadow-terminal md:p-8">
     {% unless page.header.overlay_color or page.header.overlay_image %}
+      {% if page.eyebrow %}<p class="archive__eyebrow">{{ page.eyebrow }}</p>{% endif %}
       <h1 class="page__title">{{ page.title }}</h1>
+      {% if page.description %}<p class="archive__description">{{ page.description }}</p>{% endif %}
     {% endunless %}
     {{ content }}
   </div>

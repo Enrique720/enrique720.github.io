@@ -4,25 +4,25 @@
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
 
-<div itemscope itemtype="http://schema.org/Person">
+<div class="security-card rounded-lg border border-slate-700/60 bg-slate-950/70 p-5 shadow-terminal" itemscope itemtype="http://schema.org/Person">
 
-  <div class="author__avatar">
+  <div class="author__avatar mb-4">
     {% if author.avatar contains "://" %}
-    	<img id="author-avatar-img" src="{{ author.avatar }}" alt="{{ author.name }}">
+    	<img id="author-avatar-img" class="mx-auto aspect-square w-36 rounded border border-phosphor/30 object-cover shadow-[0_0_40px_rgba(73,242,194,.14)]" src="{{ author.avatar }}" alt="{{ author.name }}">
     {% else %}
-    	<img id="author-avatar-img" src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar" alt="{{ author.name }}">
+    	<img id="author-avatar-img" src="{{ author.avatar | prepend: "/images/" | prepend: base_path }}" class="author__avatar mx-auto aspect-square w-36 rounded border border-phosphor/30 object-cover shadow-[0_0_40px_rgba(73,242,194,.14)]" alt="{{ author.name }}">
     {% endif %}
   </div>
 
-  <div class="author__content">
-    <h3 class="author__name">{{ author.name }}</h3>
-    {% if author.pronouns %}<p class="author__pronouns">{{ author.pronouns }}</p>{% endif %}
-    {% if author.bio %}<p class="author__bio">{{ author.bio }}</p>{% endif %}
+  <div class="author__content text-center">
+    <h3 class="author__name m-0 text-2xl font-black leading-none text-slate-50">{{ author.name }}</h3>
+    {% if author.pronouns %}<p class="author__pronouns text-sm text-slate-400">{{ author.pronouns }}</p>{% endif %}
+    {% if author.bio %}<p class="author__bio mx-auto mt-3 max-w-56 text-sm leading-6 text-slate-300">{{ author.bio }}</p>{% endif %}
   </div>
 
-  <div class="author__urls-wrapper">
-    <button class="btn btn--inverse">Follow</button>
-    <ul class="author__urls social-icons">
+  <div class="author__urls-wrapper mt-5">
+    <button class="btn btn--inverse hidden">Follow</button>
+    <ul class="author__urls social-icons m-0 grid list-none gap-2 p-0 text-sm text-slate-300">
       <!-- Font Awesome icons / Biographic information  -->
       {% if author.location %}
         <li class="author__desktop"><i class="fa-solid fa-location-dot icon-pad-right" aria-hidden="true"></i>{{ author.location }}</li>

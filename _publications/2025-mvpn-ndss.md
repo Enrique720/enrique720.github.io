@@ -1,13 +1,13 @@
 ---
-title: "MVPNalyzer: An Investigative Framework for the Security & Privacy Audit of Mobile VPNs"
+title: "MVPNalyzer: An Investigative Framework for Auditing the Security & Privacy of Mobile VPNs"
 collection: publications
 category: conferences
 permalink: /publication/2026-mvpn-ndss
 excerpt: ''
 date: 2026-02-23
 venue: 'The Network and Distributed System Security (NDSS) Symposium'
-citation: 'Wayne Wang*, Aaron Ortwein*, Enrique Sobrados*, Robert Stanley, Piyush Kumar, Afsah Anwar, and Roya Ensafi. MVPNalyzer: An Investigative Framework for the Security & Privacy Audit of Mobile VPNs. In The Network and Distributed System Security (NDSS) Symposium, 2026.'
-paperurl: 'http://esobrados.com/files/papers/mvpnalyzer.pdf'
+citation: 'Wayne Wang, Aaron Ortwein, Enrique Sobrados, Robert Stanley, Piyush Kumar Sharma, Afsah Anwar, and Roya Ensafi. MVPNalyzer: An Investigative Framework for Auditing the Security & Privacy of Mobile VPNs. In The Network and Distributed System Security (NDSS) Symposium, 2026.'
+paperurl: 'https://www.ndss-symposium.org/wp-content/uploads/2026-s1573-paper.pdf'
 ---
  
 # ABSTRACT
@@ -20,10 +20,10 @@ guards end user traffic from malicious network intermediaries
 such network intermediaries to VPN providers. Yet, despite the
 sensitivity of this role, VPN apps, especially on mobile platforms,
 remain insufficiently audited.
-In this work, we present MVPN-Audit, an extensible framework
+In this work, we present MVPNalyzer, an extensible framework
 for systematically analyzing Android VPN apps. Designed to
 handle the unique challenges of the Android VPN ecosystem,
-MVPN-Audit enables detailed investigation of VPN applications’
+MVPNalyzer enables detailed investigation of VPN applications’
 behavior across the network layers. We apply our framework to
 281 popular VPN apps from the Google Play Store and uncover
 fundamental and critical issues: 61 apps transmit unencrypted

@@ -2,6 +2,7 @@
 title: "Tracer Fire CTF Winner!"
 excerpt: "Obtained first place in the CTF held by Sandia National Laboratories!<br/><img src='/images/portfolio/conference.jpeg' class='object-fit-cover bordered-img' style='width: 550px; height:300px;'>"
 collection: portfolio
+type: "CTF"
 ---
 
 During the Annual Computer Security Applications Conference (ACSAC), I participated in a workshop called TracerFire, organized by Sandia National Laboratories. This workshop includes a two-day CTF where different teams participate to reconstruct a hacking scenario. The CTF was focused on forensics, and our task was to find many different flags along the way. We used tools like Kibana, Autopsy, Volatility, Suricata, and Velociraptor.

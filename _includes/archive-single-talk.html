@@ -13,7 +13,7 @@
 {% endif %}
 
 <div class="{{ include.type | default: "list" }}__item">
-  <article class="archive__item" itemscope itemtype="http://schema.org/CreativeWork">
+  <article class="archive__item listing-card" itemscope itemtype="http://schema.org/CreativeWork">
     {% if include.type == "grid" and teaser %}
       <div class="archive__item-teaser">
         <img src=
@@ -32,11 +32,27 @@
         <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ title }}</a>
       {% endif %}
     </h2>
-    {% if post.read_time %}
-      <p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {% include read-time.html %}</p>
-    {% endif %}
-    {% if post.date %}<p class="page__meta"><i class="fa fa-clock" aria-hidden="true"></i> {{ post.date | date: '%B %d, %Y' }}</p>{% endif %}
-    {% if post.venue %}<p class="archive__item-excerpt" itemprop="description">{{post.type}}, {{ post.venue }},  {{post.location}} {% endif %}
-    {% if post.excerpt %}<p class="archive__item-excerpt" itemprop="description">{{ post.excerpt | markdownify }}</p>{% endif %}
+    <div class="listing-card__meta">
+      {% if post.type %}
+        <span>
+          {% if post.type == "GitHub" %}
+            <i class="fa-brands fa-github" aria-hidden="true"></i>
+          {% elsif post.type == "CTF" %}
+            <i class="fa-solid fa-flag" aria-hidden="true"></i>
+          {% else %}
+            <i class="fa-solid fa-tag" aria-hidden="true"></i>
+          {% endif %}
+          {{ post.type }}
+        </span>
+      {% endif %}
+      {% if post.venue %}<span><i class="fa-solid fa-building-columns" aria-hidden="true"></i>{{ post.venue }}</span>{% endif %}
+      {% if post.location %}<span><i class="fa-solid fa-location-dot" aria-hidden="true"></i>{{ post.location }}</span>{% endif %}
+      {% if post.date %}<span><i class="fa-solid fa-calendar" aria-hidden="true"></i>{{ post.date | date: '%B %Y' }}</span>{% endif %}
+      {% if post.read_time %}<span><i class="fa-solid fa-clock" aria-hidden="true"></i>{% include read-time.html %}</span>{% endif %}
+    </div>
+    {% if post.excerpt %}<div class="archive__item-excerpt listing-card__excerpt" itemprop="description">{{ post.excerpt | markdownify }}</div>{% endif %}
+    <div class="listing-card__links">
+      <a href="{{ base_path }}{{ post.url }}" rel="permalink"><i class="fa-solid fa-arrow-up-right-from-square" aria-hidden="true"></i>Details</a>
+    </div>
   </article>
 </div>
