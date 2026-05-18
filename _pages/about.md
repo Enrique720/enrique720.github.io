@@ -8,8 +8,7 @@ redirect_from:
 ---
 
 <section class="security-card hero-card relative overflow-hidden rounded-lg border border-slate-700/50 bg-slate-950/70 p-6 shadow-terminal md:p-10">
-  <div class="absolute right-6 top-6 hidden font-mono text-xs uppercase tracking-[.22em] text-slate-600 md:block">UNM / VPN security / CTF</div>
-  <h1 class="mb-6 max-w-4xl text-3xl font-black leading-none text-slate-50">About Me</h1>
+  <h2 class="mb-6 max-w-2xl text-3xl font-black leading-none text-slate-50">About Me</h2>
   <p class="max-w-3xl text-lg leading-8 text-slate-300">
     I am a motivated second year Ph.D. student at <a href="https://unm.edu">The University of New Mexico</a>, Albuquerque, NM.
     I started my Ph.D. program in Fall 2024. I am very passionate about cybersecurity, with penetration testing being one of
@@ -24,7 +23,6 @@ redirect_from:
 
 <section class="signal-grid mt-6 grid gap-6 lg:grid-cols-[1.05fr_.95fr]">
   <div class="security-card section-panel rounded-lg border border-slate-700/50 bg-slate-950/62 p-6">
-    <p class="section-kicker mb-3 font-mono text-xs uppercase tracking-[.24em] text-voltage">research</p>
     <h2 class="mt-0 text-3xl font-black text-slate-50">Research</h2>
     <p>
       I am working as a Research Assistant, advised by <a href="https://afsah.org">Prof. Afsah Anwar</a> at UNM.
@@ -35,6 +33,7 @@ redirect_from:
   </div>
 
   <div class="security-card section-panel rounded-lg border border-slate-700/50 bg-slate-950/62 p-6">
+    <p class="section-kicker mb-3 font-mono text-xs uppercase tracking-[.24em] text-voltage">Current Information</p>
     <div class="grid gap-3 font-mono text-sm">
       <div class="metric-row flex items-center justify-between border-b border-slate-700/50 pb-3"><span class="text-slate-400">Position</span><span class="text-phosphor">Research Assistant</span></div>
       <div class="metric-row flex items-center justify-between border-b border-slate-700/50 pb-3"><span class="text-slate-400">Focus</span><span class="text-phosphor">VPN analysis</span></div>

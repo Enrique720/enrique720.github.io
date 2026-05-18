@@ -9,6 +9,13 @@
         </a>
       </li>
     {% endif %}
+    {% if site.author.googlescholar %}
+      <li>
+        <a href="{{ site.author.googlescholar }}" target="_blank" rel="noopener" aria-label="Google Scholar">
+          <i class="ai ai-google-scholar"></i>
+        </a>
+      </li>
+    {% endif %}
     {% if site.author.linkedin %}
       <li>
         <a href="https://linkedin.com/in/{{ site.author.linkedin }}" target="_blank" rel="noopener" aria-label="LinkedIn">

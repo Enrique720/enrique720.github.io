@@ -6,7 +6,8 @@ permalink: /publication/2026-mvpn-ndss
 excerpt: ''
 date: 2026-02-23
 venue: 'The Network and Distributed System Security (NDSS) Symposium'
-citation: 'Wayne Wang, Aaron Ortwein, Enrique Sobrados, Robert Stanley, Piyush Kumar Sharma, Afsah Anwar, and Roya Ensafi. MVPNalyzer: An Investigative Framework for Auditing the Security & Privacy of Mobile VPNs. In The Network and Distributed System Security (NDSS) Symposium, 2026.'
+authors: 'Wayne Wang*, Aaron Ortwein*, <strong>Enrique Sobrados</strong>*, Robert Stanley, Piyush Kumar Sharma, Afsah Anwar, and Roya Ensafi. *Equal contribution.'
+citation: 'Wayne Wang*, Aaron Ortwein*, <strong>Enrique Sobrados</strong>*, Robert Stanley, Piyush Kumar Sharma, Afsah Anwar, and Roya Ensafi. MVPNalyzer: An Investigative Framework for Auditing the Security & Privacy of Mobile VPNs. In The Network and Distributed System Security (NDSS) Symposium, 2026. *Equal contribution.'
 paperurl: 'https://www.ndss-symposium.org/wp-content/uploads/2026-s1573-paper.pdf'
 ---
  

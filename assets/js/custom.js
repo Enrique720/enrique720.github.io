@@ -1,4 +1,13 @@
 $(function() {
+ $('.nav-toggle').on('click', function() {
+   const $button = $(this);
+   const $nav = $button.closest('.greedy-nav');
+   const isOpen = $button.attr('aria-expanded') === 'true';
+   $button.attr('aria-expanded', String(!isOpen));
+   $button.attr('aria-label', isOpen ? 'Open navigation menu' : 'Close navigation menu');
+   $nav.toggleClass('is-open', !isOpen);
+ });
+
  $('#author-avatar-img')
     .on('mouseenter', function() {
       $(this).data('original-src', $(this).attr('src'));

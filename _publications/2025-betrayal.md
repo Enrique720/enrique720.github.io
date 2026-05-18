@@ -7,7 +7,8 @@ excerpt: ''
 date: 2025-10-14
 venue: 'arXiv preprint'
 paperurl: 'https://arxiv.org/pdf/2510.06535'
-citation: 'Jack Vanlyssel, Enrique Sobrados, Ramsha Anwar, Gruia-Catalin Roman, and Afsah Anwar. SpyChain: Multi-Vector Supply Chain Attacks on Small Satellite Systems. arXiv preprint arXiv:2510.06535, 2025.'
+authors: 'Jack Vanlyssel, <strong>Enrique Sobrados</strong>, Ramsha Anwar, Gruia-Catalin Roman, and Afsah Anwar'
+citation: 'Jack Vanlyssel, <strong>Enrique Sobrados</strong>, Ramsha Anwar, Gruia-Catalin Roman, and Afsah Anwar. SpyChain: Multi-Vector Supply Chain Attacks on Small Satellite Systems. arXiv preprint arXiv:2510.06535, 2025.'
 ---
  
 # ABSTRACT

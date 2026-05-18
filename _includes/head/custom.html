@@ -182,6 +182,23 @@
     color: #49f2c2 !important;
   }
   .masthead__menu-item--lg { display: none !important; }
+  .nav-toggle {
+    display: none;
+    width: 42px;
+    height: 38px;
+    place-items: center;
+    border: 1px solid rgba(125, 211, 252, .28);
+    border-radius: 7px;
+    background: rgba(15, 23, 42, .78);
+    color: #f8fafc;
+    cursor: pointer;
+    transition: border-color .2s ease, background .2s ease;
+  }
+  .nav-toggle:hover,
+  .nav-toggle[aria-expanded="true"] {
+    border-color: rgba(73, 242, 194, .48);
+    background: rgba(73, 242, 194, .1);
+  }
   .page__footer {
     border-top: 1px solid rgba(148, 163, 184, .2);
     background: rgba(8, 11, 16, .78);
@@ -417,6 +434,25 @@
     line-height: 1.2;
   }
   .publication-card__meta i { color: #7dd3fc; }
+  .publication-card__authors {
+    display: flex;
+    align-items: flex-start;
+    gap: .55rem;
+    margin: -.25rem 0 0 !important;
+    max-width: 920px;
+    color: #cbd5e1 !important;
+    font-size: .94rem;
+    line-height: 1.65 !important;
+  }
+  .publication-card__authors i {
+    flex: 0 0 auto;
+    margin-top: .28rem;
+    color: #f7b733;
+  }
+  .publication-card__authors-text {
+    display: block;
+    min-width: 0;
+  }
   .listing-card__meta {
     display: flex;
     flex-wrap: wrap;
@@ -814,6 +850,9 @@
   }
   .author__urls a:hover { color: #49f2c2; }
   .author__urls i { color: #7dd3fc; }
+  .author-card {
+    max-width: 320px;
+  }
   .icon-pad-right,
   .author__urls i,
   .footer-social-icons i {
@@ -1035,12 +1074,128 @@
   }
   @media (max-width: 899px) {
     #main { padding-top: 24px; }
-    .masthead__inner-wrap { align-items: flex-start; flex-direction: column; }
+    .sidebar {
+      width: 100% !important;
+    }
+    .author-card {
+      width: min(100%, 420px);
+      max-width: 420px;
+      margin: 0 auto 1.5rem !important;
+    }
+    .masthead__inner-wrap {
+      align-items: center !important;
+      flex-direction: row !important;
+      flex-wrap: nowrap !important;
+      gap: .85rem;
+    }
+    .site-lockup {
+      min-width: 0;
+      flex: 1 1 0;
+    }
     .masthead__menu,
-    .greedy-nav { justify-content: flex-start; }
-    .masthead__menu-item a { font-size: .66rem; padding: 7px 9px; }
+    .greedy-nav {
+      justify-content: flex-end;
+    }
+    .masthead__menu {
+      flex: 0 0 auto !important;
+      margin-left: auto !important;
+    }
+    .greedy-nav {
+      position: static;
+    }
+    .nav-toggle {
+      display: grid;
+      flex: 0 0 auto;
+    }
+    .visible-links {
+      position: absolute;
+      top: calc(100% + 1px);
+      right: 16px;
+      left: 16px;
+      display: none !important;
+      flex-direction: column;
+      flex-wrap: nowrap;
+      align-items: stretch;
+      gap: .35rem;
+      border: 1px solid rgba(51, 65, 85, .72);
+      border-radius: 8px;
+      background: rgba(8, 11, 16, .96);
+      box-shadow: 0 24px 70px rgba(0,0,0,.42);
+      padding: .55rem !important;
+    }
+    .greedy-nav.is-open .visible-links {
+      display: flex !important;
+    }
+    .masthead__menu-item a {
+      border-radius: 6px;
+      font-size: .72rem;
+      padding: .72rem .85rem;
+    }
   }
   @media (max-width: 640px) {
+    #main {
+      width: calc(100% - 24px);
+      padding-top: 18px;
+    }
+    .author-card {
+      display: grid;
+      width: 100%;
+      max-width: none;
+      grid-template-columns: 64px minmax(0, 1fr);
+      gap: .75rem .9rem;
+      align-items: center;
+      margin-bottom: 1rem !important;
+      padding: .8rem !important;
+    }
+    .author__avatar {
+      margin-bottom: 0 !important;
+    }
+    #author-avatar-img {
+      width: 64px !important;
+      height: 64px !important;
+      border-radius: 7px !important;
+    }
+    .author__content {
+      min-width: 0;
+      text-align: left !important;
+    }
+    .author__name {
+      overflow: hidden;
+      font-size: 1.05rem !important;
+      line-height: 1.1 !important;
+      text-overflow: ellipsis;
+      white-space: nowrap;
+    }
+    .author__bio {
+      max-width: none !important;
+      margin: .28rem 0 0 !important;
+      font-size: .78rem !important;
+      line-height: 1.35 !important;
+    }
+    .author__urls-wrapper {
+      grid-column: 1 / -1;
+      margin-top: .15rem !important;
+      min-width: 0;
+    }
+    .author__urls {
+      display: flex !important;
+      flex-wrap: nowrap;
+      gap: .4rem !important;
+      overflow-x: auto;
+      padding-bottom: .1rem !important;
+      font-size: .78rem !important;
+      scrollbar-width: thin;
+    }
+    .author__urls li {
+      flex: 0 0 auto;
+      padding: .4rem .55rem;
+      white-space: nowrap;
+    }
+    .icon-pad-right,
+    .author__urls i {
+      min-width: 1.1em;
+      margin-right: .38rem;
+    }
     .site-lockup__name { font-size: .76rem; letter-spacing: .12em; }
     .site-lockup__tagline { font-size: .72rem; }
     .visible-links { gap: 4px; }

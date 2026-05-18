@@ -7,7 +7,8 @@ excerpt: ''
 date: 2026-01-14
 venue: 'arXiv preprint'
 paperurl: 'https://arxiv.org/pdf/2601.09232'
-citation: 'Muhammad Danish, Enrique Sobrados, Priya Kaushik, Bhupendra Acharya, Muhammad Saad, Abdullah Mueen, Sazzadur Rahaman, and Afsah Anwar. Private Links, Public Leaks: Consequences of Frictionless User Experience on the Security and Privacy Posture of SMS-Delivered URLs. arXiv preprint arXiv:2601.09232, 2026.'
+authors: 'Muhammad Danish, <strong>Enrique Sobrados</strong>, Priya Kaushik, Bhupendra Acharya, Muhammad Saad, Abdullah Mueen, Sazzadur Rahaman, and Afsah Anwar'
+citation: 'Muhammad Danish, <strong>Enrique Sobrados</strong>, Priya Kaushik, Bhupendra Acharya, Muhammad Saad, Abdullah Mueen, Sazzadur Rahaman, and Afsah Anwar. Private Links, Public Leaks: Consequences of Frictionless User Experience on the Security and Privacy Posture of SMS-Delivered URLs. arXiv preprint arXiv:2601.09232, 2026.'
 ---
 
 # ABSTRACT

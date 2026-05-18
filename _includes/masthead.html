@@ -1,7 +1,7 @@
 {% include base_path %}
 
 <div class="masthead sticky top-0 z-50 border-b border-slate-700/40 bg-void/86 backdrop-blur-xl">
-  <div class="masthead__inner-wrap mx-auto flex w-[min(1180px,calc(100%_-_32px))] flex-col items-start justify-between gap-4 py-4 md:flex-row md:items-center">
+  <div class="masthead__inner-wrap mx-auto flex w-[min(1180px,calc(100%_-_32px))] items-center justify-between gap-4 py-4">
     <a href="{{ base_path }}/" class="site-lockup group flex items-center gap-3 no-underline">
       <span class="leading-tight">
         <span class="site-lockup__name block text-sm font-semibold uppercase tracking-[.18em] text-slate-100">{{ site.title }}</span>
@@ -11,8 +11,8 @@
 
     <div class="masthead__menu">
       <nav id="site-nav" class="greedy-nav flex items-center justify-end">
-        <button aria-label="Open navigation menu" class="hidden rounded border border-slate-700/70 bg-slate-900/80 p-3 text-slate-100"><div class="navicon"></div></button>
-        <ul class="visible-links m-0 flex list-none flex-wrap items-center gap-1 p-0">
+        <button class="nav-toggle" type="button" aria-label="Open navigation menu" aria-expanded="false" aria-controls="masthead-links"><span class="navicon"></span></button>
+        <ul id="masthead-links" class="visible-links m-0 flex list-none flex-wrap items-center gap-1 p-0">
           <li class="masthead__menu-item masthead__menu-item--lg persist hidden"><a href="{{ base_path }}/">{{ site.title }}</a></li>
           {% for link in site.data.navigation.main %}
             {% if link.url contains 'http' %}

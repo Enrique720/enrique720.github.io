@@ -4,7 +4,7 @@
   {% assign author = site.data.authors[page.author] %}{% else %}{% assign author = site.author %}
 {% endif %}
 
-<div class="security-card rounded-lg border border-slate-700/60 bg-slate-950/70 p-5 shadow-terminal" itemscope itemtype="http://schema.org/Person">
+<div class="author-card security-card rounded-lg border border-slate-700/60 bg-slate-950/70 p-5 shadow-terminal" itemscope itemtype="http://schema.org/Person">
 
   <div class="author__avatar mb-4">
     {% if author.avatar contains "://" %}

@@ -39,6 +39,9 @@
         {% if post.venue %}<span><i class="fa-solid fa-book-open" aria-hidden="true"></i>{{ post.venue }}</span>{% endif %}
         {% if post.date %}<span><i class="fa-solid fa-calendar" aria-hidden="true"></i>{{ post.date | default: "1900-01-01" | date: "%B %Y" }}</span>{% endif %}
       </div>
+      {% if post.authors %}
+        <p class="publication-card__authors"><i class="fa-solid fa-user-group" aria-hidden="true"></i><span class="publication-card__authors-text">{{ post.authors }}</span></p>
+      {% endif %}
       {% if post.paperurl %}
         <div class="publication-card__links" aria-label="Publication links">
           <a href="{{ post.paperurl }}"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>Paper</a>
