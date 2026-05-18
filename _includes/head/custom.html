@@ -917,6 +917,65 @@
     gap: 1rem;
     margin-top: 2rem;
   }
+  .page__meta {
+    margin-top: 1.25rem;
+    border-top: 1px solid rgba(51, 65, 85, .72);
+    padding-top: 1rem;
+  }
+  .page__taxonomy {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    gap: .6rem .75rem;
+    margin: 0;
+    color: #cbd5e1;
+  }
+  .page__taxonomy + .page__taxonomy {
+    margin-top: .75rem;
+  }
+  .page__taxonomy-label {
+    display: inline-flex;
+    align-items: center;
+    gap: .35rem;
+    color: #f8fafc;
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: .72rem;
+    font-weight: 800;
+    letter-spacing: .08em;
+    text-transform: uppercase;
+  }
+  .page__taxonomy-label i {
+    color: #7dd3fc;
+  }
+  .page__taxonomy-items {
+    display: inline-flex;
+    flex-wrap: wrap;
+    gap: .45rem;
+  }
+  .page__taxonomy .sep {
+    display: none;
+  }
+  .page__taxonomy-item {
+    display: inline-flex;
+    align-items: center;
+    min-height: 28px;
+    border: 1px solid rgba(125, 211, 252, .28);
+    border-radius: 999px;
+    background: rgba(15, 23, 42, .68);
+    padding: .34rem .7rem;
+    color: #cbd5e1 !important;
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: .72rem;
+    line-height: 1;
+    text-decoration: none !important;
+    transition: border-color .2s ease, background .2s ease, color .2s ease, transform .2s ease;
+  }
+  .page__taxonomy-item:hover {
+    border-color: rgba(73, 242, 194, .55);
+    background: rgba(73, 242, 194, .1);
+    color: #49f2c2 !important;
+    transform: translateY(-1px);
+  }
   .pagination--pager {
     display: flex;
     min-height: 76px;
