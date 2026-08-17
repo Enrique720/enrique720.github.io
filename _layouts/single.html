@@ -34,11 +34,15 @@ layout: default
         {% if page.collection == 'publications' %}
           <div class="publication-detail__meta">
             {% if page.venue %}<span><i class="fa-solid fa-book-open" aria-hidden="true"></i>{{ page.venue }}</span>{% endif %}
-            {% if page.date %}<span><i class="fa-solid fa-calendar" aria-hidden="true"></i>{{ page.date | default: "1900-01-01" | date: "%Y" }}</span>{% endif %}
+            {% if page.status %}
+              <span class="publication-card__status"><i class="fa-solid fa-hourglass-half" aria-hidden="true"></i>{{ page.status }}</span>
+            {% elsif page.date %}
+              <span><i class="fa-solid fa-calendar" aria-hidden="true"></i>{{ page.date | default: "1900-01-01" | date: "%Y" }}</span>
+            {% endif %}
           </div>
 
           <section class="publication-detail__section">
-            <h2>Abstract</h2>
+            {% unless page.status %}<h2>Abstract</h2>{% endunless %}
             <div class="publication-detail__abstract">
               {{ content | replace: '<h1 id="abstract">ABSTRACT</h1>', '' | replace: '<h1>ABSTRACT</h1>', '' | replace: '<h1 id="abstract">Abstract</h1>', '' }}
             </div>

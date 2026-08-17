@@ -37,7 +37,11 @@
     {% if post.collection == 'publications' or include.publication %}
       <div class="publication-card__meta">
         {% if post.venue %}<span><i class="fa-solid fa-book-open" aria-hidden="true"></i>{{ post.venue }}</span>{% endif %}
-        {% if post.date %}<span><i class="fa-solid fa-calendar" aria-hidden="true"></i>{{ post.date | default: "1900-01-01" | date: "%B %Y" }}</span>{% endif %}
+        {% if post.status %}
+          <span class="publication-card__status"><i class="fa-solid fa-hourglass-half" aria-hidden="true"></i>{{ post.status }}</span>
+        {% elsif post.date %}
+          <span><i class="fa-solid fa-calendar" aria-hidden="true"></i>{{ post.date | default: "1900-01-01" | date: "%B %Y" }}</span>
+        {% endif %}
       </div>
       {% if post.authors %}
         <p class="publication-card__authors"><i class="fa-solid fa-user-group" aria-hidden="true"></i><span class="publication-card__authors-text">{{ post.authors }}</span></p>
