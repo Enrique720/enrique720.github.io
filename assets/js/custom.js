@@ -19,4 +19,39 @@ $(function() {
       $(this).attr('src', $(this).data('original-src'));
       $(this).attr('alt', $(this).data('original-alt'));
     });  
+
+ function flashCopied($button) {
+   const $label = $button.find('.js-copy-bibtex-label');
+   const original = $label.text();
+   if ($button.data('copy-timer')) {
+     clearTimeout($button.data('copy-timer'));
+   } else {
+     $button.data('copy-original', original);
+   }
+   $label.text('Copied!');
+   $button.addClass('is-copied');
+   $button.data('copy-timer', setTimeout(function() {
+     $label.text($button.data('copy-original'));
+     $button.removeClass('is-copied');
+     $button.removeData('copy-timer');
+   }, 1800));
+ }
+
+ $(document).on('click', '.js-copy-bibtex', function() {
+   const $button = $(this);
+   const text = $button.attr('data-bibtex');
+   if (!text) { return; }
+   if (navigator.clipboard && navigator.clipboard.writeText) {
+     navigator.clipboard.writeText(text).then(function() {
+       flashCopied($button);
+     });
+     return;
+   }
+   // Fallback for browsers without the async clipboard API.
+   const $scratch = $('<textarea>').val(text).css({ position: 'fixed', opacity: 0 }).appendTo('body');
+   $scratch[0].select();
+   document.execCommand('copy');
+   $scratch.remove();
+   flashCopied($button);
+ });
 });

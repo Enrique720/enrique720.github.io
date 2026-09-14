@@ -34,6 +34,7 @@ layout: default
         {% if page.collection == 'publications' %}
           <div class="publication-detail__meta">
             {% if page.venue %}<span><i class="fa-solid fa-book-open" aria-hidden="true"></i>{{ page.venue }}</span>{% endif %}
+            {% if page.acceptance_rate %}<span><i class="fa-solid fa-chart-pie" aria-hidden="true"></i>A/R: {{ page.acceptance_rate }}</span>{% endif %}
             {% if page.status %}
               <span class="publication-card__status"><i class="fa-solid fa-hourglass-half" aria-hidden="true"></i>{{ page.status }}</span>
             {% elsif page.date %}
@@ -54,6 +55,11 @@ layout: default
               <div class="publication-detail__citation">{{ page.citation }}</div>
             </section>
           {% endif %}
+
+          <section class="publication-detail__section">
+            <h2>BibTeX</h2>
+            {% include bibtex.html pub=page style='block' %}
+          </section>
 
           {% if page.paperurl or page.slidesurl or page.bibtexurl %}
             <section class="publication-detail__section">

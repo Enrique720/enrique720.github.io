@@ -588,7 +588,8 @@
     gap: .65rem;
     padding-top: .1rem;
   }
-  .publication-card__links a {
+  .publication-card__links a,
+  .publication-card__links button {
     display: inline-flex;
     align-items: center;
     gap: .45rem;
@@ -604,7 +605,8 @@
     text-decoration: none !important;
     text-transform: uppercase;
   }
-  .publication-card__links a:hover {
+  .publication-card__links a:hover,
+  .publication-card__links button:hover {
     border-color: rgba(247, 183, 51, .6);
     background: rgba(247, 183, 51, .1);
     color: #f7b733 !important;
@@ -633,6 +635,7 @@
   }
   .publication-detail__meta i { color: #7dd3fc; }
   .publication-detail__section {
+    min-width: 0;
     border: 1px solid rgba(51, 65, 85, .72);
     border-radius: 8px;
     background: rgba(2, 6, 23, .36);
@@ -654,6 +657,36 @@
     line-height: 1.78;
   }
   .publication-detail__abstract p:first-child { margin-top: 0; }
+  .publication-card__links button,
+  .publication-detail__links button {
+    cursor: pointer;
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+  }
+  .publication-card__links button.is-copied,
+  .publication-detail__links button.is-copied {
+    border-color: rgba(247, 183, 51, .6);
+    background: rgba(247, 183, 51, .12);
+    color: #f7b733 !important;
+  }
+  .publication-detail__bibtex {
+    max-width: 100%;
+    overflow-x: auto;
+    margin: 0 0 1rem;
+    border: 1px solid rgba(51, 65, 85, .78);
+    border-radius: 8px;
+    background: rgba(2, 6, 23, .6);
+    padding: 1rem 1.15rem;
+  }
+  .publication-detail__bibtex code {
+    border: 0;
+    background: none;
+    padding: 0;
+    color: #cbd5e1;
+    font-family: "JetBrains Mono", ui-monospace, monospace;
+    font-size: .82rem;
+    line-height: 1.7;
+    white-space: pre;
+  }
   .publication-detail__citation {
     border-left: 2px solid rgba(247, 183, 51, .76);
     padding-left: 1rem;
@@ -665,7 +698,8 @@
     flex-wrap: wrap;
     gap: .7rem;
   }
-  .publication-detail__links a {
+  .publication-detail__links a,
+  .publication-detail__links button {
     display: inline-flex;
     align-items: center;
     gap: .5rem;
@@ -681,7 +715,8 @@
     text-decoration: none !important;
     text-transform: uppercase;
   }
-  .publication-detail__links a:hover {
+  .publication-detail__links a:hover,
+  .publication-detail__links button:hover {
     border-color: rgba(247, 183, 51, .6);
     background: rgba(247, 183, 51, .1);
     color: #f7b733 !important;

@@ -37,6 +37,7 @@
     {% if post.collection == 'publications' or include.publication %}
       <div class="publication-card__meta">
         {% if post.venue %}<span><i class="fa-solid fa-book-open" aria-hidden="true"></i>{{ post.venue }}</span>{% endif %}
+        {% if post.acceptance_rate %}<span><i class="fa-solid fa-chart-pie" aria-hidden="true"></i>A/R: {{ post.acceptance_rate }}</span>{% endif %}
         {% if post.status %}
           <span class="publication-card__status"><i class="fa-solid fa-hourglass-half" aria-hidden="true"></i>{{ post.status }}</span>
         {% elsif post.date %}
@@ -46,11 +47,10 @@
       {% if post.authors %}
         <p class="publication-card__authors"><i class="fa-solid fa-user-group" aria-hidden="true"></i><span class="publication-card__authors-text">{{ post.authors }}</span></p>
       {% endif %}
-      {% if post.paperurl %}
-        <div class="publication-card__links" aria-label="Publication links">
-          <a href="{{ post.paperurl }}"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>Paper</a>
-        </div>
-      {% endif %}
+      <div class="publication-card__links" aria-label="Publication links">
+        {% if post.paperurl %}<a href="{{ post.paperurl }}"><i class="fa-solid fa-file-pdf" aria-hidden="true"></i>Paper</a>{% endif %}
+        {% include bibtex.html pub=post %}
+      </div>
     {% else %}
       <div class="listing-card__meta">
         {% if post.type %}

@@ -1,0 +1,65 @@
+{% comment %}
+  Renders a BibTeX entry for a publication.
+  Params:
+    pub   - the publication document (post or page)
+    style - "button" for a copy-only control, "block" for the entry plus a copy control
+  Front matter overrides: bibtex_authors, bibtex_key
+{% endcomment %}
+{% assign pub = include.pub %}
+{% assign ob = '{' %}
+{% assign cb = '}' %}
+
+{% if pub.bibtex_authors %}
+  {% assign bib_authors = pub.bibtex_authors %}
+{% else %}
+  {% comment %} Drop markup, author footnote markers, and any trailing note sentence. {% endcomment %}
+  {% assign author_src = pub.authors | strip_html | replace: '*', '' | split: '. ' | first | strip %}
+  {% assign author_src = author_src | replace: ', and ', ', ' | replace: ' and ', ', ' %}
+  {% assign bib_authors = author_src | split: ', ' | join: ' and ' %}
+{% endif %}
+
+{% assign bib_title = pub.title | strip_html | strip %}
+{% assign bib_booktitle = pub.venue | strip_html | strip %}
+{% assign bib_year = pub.date | date: '%Y' %}
+
+{% if pub.bibtex_key %}
+  {% assign bib_key = pub.bibtex_key %}
+{% else %}
+  {% assign bib_surname = bib_authors | split: ' and ' | first | split: ' ' | last | downcase | replace: '.', '' | replace: '-', '' %}
+  {% comment %} First meaningful title word, skipping leading articles. {% endcomment %}
+  {% assign bib_stopwords = 'a,an,the,on,in,of' | split: ',' %}
+  {% assign bib_word = '' %}
+  {% assign bib_title_words = bib_title | downcase | replace: ':', '' | replace: ',', '' | replace: '"', '' | replace: '?', '' | split: ' ' %}
+  {% for word in bib_title_words %}
+    {% unless bib_stopwords contains word %}
+      {% assign bib_word = word %}
+      {% break %}
+    {% endunless %}
+  {% endfor %}
+  {% assign bib_key = bib_surname | append: bib_year | append: bib_word %}
+{% endif %}
+
+{% capture bibtex_entry %}@inproceedings{{ ob }}{{ bib_key }},
+  title     = {{ ob }}{{ bib_title }}{{ cb }},
+  author    = {{ ob }}{{ bib_authors }}{{ cb }},
+  booktitle = {{ ob }}{{ bib_booktitle }}{{ cb }},
+  year      = {{ ob }}{{ bib_year }}{{ cb }}
+{{ cb }}{% endcapture %}
+
+{% comment %}
+  The compress layout collapses whitespace outside <pre>, so newlines and indentation
+  in the copy button's data attribute are encoded as character references, which the
+  browser decodes back to real whitespace when the attribute is read.
+{% endcomment %}
+{% capture bibtex_newline %}
+{% endcapture %}
+{% assign bibtex_attr = bibtex_entry | escape | replace: bibtex_newline, '&#10;' | replace: ' ', '&#32;' %}
+
+{% if include.style == 'block' %}
+  <pre class="publication-detail__bibtex"><code>{{ bibtex_entry }}</code></pre>
+  <div class="publication-detail__links">
+    <button type="button" class="js-copy-bibtex" data-bibtex="{{ bibtex_attr }}"><i class="fa-solid fa-copy" aria-hidden="true"></i><span class="js-copy-bibtex-label">Copy BibTeX</span></button>
+  </div>
+{% else %}
+  <button type="button" class="js-copy-bibtex" data-bibtex="{{ bibtex_attr }}"><i class="fa-solid fa-quote-right" aria-hidden="true"></i><span class="js-copy-bibtex-label">Copy BibTeX</span></button>
+{% endif %}
