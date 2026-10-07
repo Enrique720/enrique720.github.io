@@ -1,9 +1,9 @@
 ---
 layout: archive
 permalink: /year-archive/
-title: "Blog posts"
-eyebrow: "Writing"
-description: "Notes, updates, and longer-form writing on security, research, and community work."
+title: "Research Blogs"
+eyebrow: "Research notes"
+description: "The questions, findings, and implications behind my security research papers."
 author_profile: true
 redirect_from:
   - /wordpress/blog-posts/
@@ -11,7 +11,8 @@ redirect_from:
 
 {% include base_path %}
 <div class="blog-list">
-  {% for post in site.posts %}
+  {% assign research_posts = site.posts | where: 'research', true | sort: 'paper_year' | reverse %}
+  {% for post in research_posts %}
     {% include blog-card.html %}
   {% endfor %}
 </div>

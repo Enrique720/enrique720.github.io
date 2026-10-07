@@ -1,6 +1,8 @@
 ---
 title: "3rd place @ 2026 Lobo Hackathon" 
 excerpt: "I placed 3rd in the 2026 Lobo Hackathon, a competitive event that challenges participants to develop innovative solutions to real-world problems using technology. <br/><img src='/images/portfolio/hackathon.jpeg' class='object-fit-cover bordered-img' style='width: 550px; height:300px;'>"
+header:
+  teaser: portfolio/hackathon.jpeg
 collection: portfolio
 type: "Award"
 ---

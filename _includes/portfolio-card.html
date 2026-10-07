@@ -1,0 +1,18 @@
+<article class="portfolio-card">
+  <div class="portfolio-card__meta">
+    <span>{{ site.author.name }}</span>
+    {% if post.type %}<span class="portfolio-card__type">{{ post.type }}</span>{% endif %}
+  </div>
+  <div class="portfolio-card__content">
+    <div class="portfolio-card__body">
+      <h2 class="portfolio-card__title"><a href="{{ base_path }}{{ post.url }}">{{ post.title | escape }}</a></h2>
+      {% if post.excerpt %}<p class="portfolio-card__summary">{{ post.excerpt | strip_html }}</p>{% endif %}
+      <a class="portfolio-card__link" href="{{ base_path }}{{ post.url }}" aria-label="Read about {{ post.title | escape }}">Explore <span aria-hidden="true">&rarr;</span></a>
+    </div>
+    {% if post.header.teaser %}
+      <a class="portfolio-card__thumbnail" href="{{ base_path }}{{ post.url }}" aria-hidden="true" tabindex="-1">
+        <img src="{{ base_path }}/images/{{ post.header.teaser }}" alt="" loading="lazy" width="320" height="200">
+      </a>
+    {% endif %}
+  </div>
+</article>

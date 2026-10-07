@@ -1,6 +1,8 @@
 ---
 title: "1st Place @ Tracer Fire CTF!"
 excerpt: "Obtained first place in the CTF held by Sandia National Laboratories!<br/><img src='/images/portfolio/conference.jpeg' class='object-fit-cover bordered-img' style='width: 550px; height:300px;'>"
+header:
+  teaser: portfolio/conference.jpeg
 collection: portfolio
 type: "CTF"
 ---

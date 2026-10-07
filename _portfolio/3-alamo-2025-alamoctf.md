@@ -1,6 +1,8 @@
 ---
 title: "3rd place @ AlamoCTF 2025"
 excerpt: "LoboSec placed 3rd in the 2025 AlamoCTF, a competitive CTF event. <br/><img src='/images/portfolio/lobosec_alamo.png' class='object-fit-cover bordered-img' style='width: 550px; height:300px;'>"
+header:
+  teaser: portfolio/lobosec_alamo.png
 collection: portfolio
 type: "Award"
 ---

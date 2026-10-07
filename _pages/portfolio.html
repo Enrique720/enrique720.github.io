@@ -2,7 +2,7 @@
 layout: archive
 title: "Portfolio"
 eyebrow: "Projects"
-description: "Selected tools, scripts, CTF work, and security projects."
+description: "Projects, fellowships, and highlights from security research and competitions."
 permalink: /portfolio/
 author_profile: true
 ---
@@ -10,6 +10,8 @@ author_profile: true
 {% include base_path %}
 
 
-{% for post in site.portfolio %}
-  {% include archive-single.html %}
-{% endfor %}
+<div class="portfolio-list">
+  {% for post in site.portfolio %}
+    {% include portfolio-card.html %}
+  {% endfor %}
+</div>

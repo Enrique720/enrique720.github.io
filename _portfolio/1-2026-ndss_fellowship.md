@@ -1,6 +1,8 @@
 ---
 title: "NDSS Fellowship" 
 excerpt: "I was awarded the NDSS Fellowship for my research on the security analysis of Virtual Private Network (VPN) applications. <br/><img src='/images/portfolio/ndss_fellowship.jpg' class='object-fit-cover bordered-img' style='width: 550px; height:300px;'>"
+header:
+  teaser: portfolio/ndss_fellowship.jpg
 collection: portfolio
 type: "Award"
 ---
