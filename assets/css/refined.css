@@ -155,3 +155,46 @@ th { color: var(--ink); }
   .signal-grid { grid-template-columns: 1fr; }
   .archive__item { padding: 1rem; }
 }
+
+/* Publications: chronological bibliography with compact, unboxed entries. */
+.publications-list { margin-top: 1.75rem; }
+.publications-year + .publications-year { margin-top: 1.5rem; }
+.archive .publications-year__heading {
+  margin: 0; padding: .45rem .75rem; background: #e7f4f4;
+  border-bottom: 1px solid var(--line); color: var(--ink); text-align: center;
+  font-size: 1rem; font-weight: 600; line-height: 1.5;
+}
+.publication-entry { padding: 1rem .5rem; border-bottom: 1px solid var(--line); }
+.publication-entry:last-child { border-bottom: 0; }
+.archive .publication-entry__title {
+  margin: 0 0 .35rem; font-family: Georgia, "Times New Roman", serif;
+  font-size: 1.3rem; font-weight: 400; line-height: 1.3;
+}
+.archive .publication-entry__title a {
+  color: var(--ink) !important; font-weight: inherit; text-decoration: none;
+}
+.archive .publication-entry__title a:hover { color: var(--accent) !important; text-decoration: underline; }
+.archive .publication-entry__authors {
+  margin: 0 0 .2rem; color: var(--muted); font-size: .9rem; line-height: 1.6;
+}
+.publication-entry__authors strong { color: var(--ink); font-weight: 700; }
+.archive .publication-entry__venue {
+  display: flex; flex-wrap: wrap; align-items: baseline; gap: .2rem .75rem;
+  margin: 0; color: var(--muted); font-size: .85rem; line-height: 1.6;
+}
+.publication-entry__venue cite { font-style: italic; }
+.publication-entry__acceptance, .publication-entry__status { white-space: nowrap; }
+.publication-entry__links { gap: .65rem; margin-top: .4rem; }
+.archive .publication-entry__links a, .archive .publication-entry__links button {
+  min-height: 0; padding: 0; border: 0; border-radius: 0; background: transparent;
+  color: var(--accent) !important; font-size: .85rem; line-height: 1.6;
+  text-decoration: underline !important; text-underline-offset: 3px;
+}
+.archive .publication-entry__links a:hover, .archive .publication-entry__links button:hover {
+  background: transparent; color: var(--hover) !important;
+}
+.publication-entry__links button i { display: none; }
+@media (max-width: 640px) {
+  .publication-entry { padding: .9rem .35rem; }
+  .archive .publication-entry__title { font-size: 1.15rem; }
+}

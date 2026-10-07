@@ -1,0 +1,15 @@
+<article class="publication-entry" itemscope itemtype="https://schema.org/ScholarlyArticle">
+  <h3 class="publication-entry__title" itemprop="headline">
+    <a href="{{ base_path }}{{ post.url }}" rel="permalink">{{ post.title | escape }}</a>
+  </h3>
+  {% if post.authors %}<p class="publication-entry__authors">{{ post.authors }}</p>{% endif %}
+  <p class="publication-entry__venue">
+    {% if post.venue %}<cite>{{ post.venue }}</cite>{% endif %}
+    {% if post.acceptance_rate %}<span class="publication-entry__acceptance">A/R: {{ post.acceptance_rate }}</span>{% endif %}
+    {% if post.status %}<span class="publication-entry__status">{{ post.status }}</span>{% endif %}
+  </p>
+  <div class="publication-card__links publication-entry__links" aria-label="Publication links">
+    {% if post.paperurl %}<a href="{{ post.paperurl }}">PDF</a>{% endif %}
+    {% include bibtex.html pub=post %}
+  </div>
+</article>
