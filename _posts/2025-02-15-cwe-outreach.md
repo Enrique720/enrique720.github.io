@@ -5,6 +5,7 @@ permalink: /posts/2025/02/cwe-outreach/
 tags:
   - science
   - volunteer
+excerpt: "Sharing water science with children at the National Museum of Nuclear Science & History as a volunteer with UNM’s Center for Water and the Environment."
 ---
 
 I often like to participate in extracurricular activities to help the scientific community. This time, I volunteered for the Center for Water and the Environment (CWE) and helped in an outreach activity.

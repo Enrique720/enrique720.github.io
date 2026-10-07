@@ -13,6 +13,10 @@ author_profile: true
 
 {% endif %}
 
-{% for post in site.talks reversed %}
-  {% include archive-single-talk.html %}
-{% endfor %}
+{% include base_path %}
+<div class="talks-grid">
+  {% assign talks = site.talks | sort: 'date' | reverse %}
+  {% for post in talks %}
+    {% include talk-card.html %}
+  {% endfor %}
+</div>

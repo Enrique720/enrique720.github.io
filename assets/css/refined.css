@@ -198,3 +198,62 @@ th { color: var(--ink); }
   .publication-entry { padding: .9rem .35rem; }
   .archive .publication-entry__title { font-size: 1.15rem; }
 }
+
+/* Speaking, writing, and teaching share the site's quiet editorial palette. */
+.talks-grid {
+  display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 280px), 1fr));
+  gap: 1.25rem; margin-top: 1.75rem; padding: 0; background: transparent;
+}
+.talk-card { min-width: 0; max-width: 420px; background: #fff; }
+.talk-card__thumbnail { display: block; overflow: hidden; }
+.archive .talk-card__thumbnail img {
+  display: block; width: 100%; height: auto; aspect-ratio: 8 / 5; object-fit: cover;
+  border: 0; border-radius: 0; box-shadow: none;
+}
+.talk-card__body { padding: 1rem; }
+.archive .talk-card__meta, .archive .talk-card__context {
+  margin: 0; font-size: .8rem; line-height: 1.6; color: var(--muted);
+}
+.archive .talk-card__title { margin: .45rem 0; font-size: 1.1rem; line-height: 1.45; font-weight: 600; }
+.archive .talk-card__title a { color: var(--ink) !important; text-decoration: none; font-weight: inherit; }
+.archive .talk-card__title a:hover { color: var(--accent) !important; text-decoration: underline; }
+.blog-list { display: grid; gap: 1.25rem; margin-top: 1.75rem; }
+.blog-card { padding: 1.25rem; border: 1px solid var(--line); background: #fff; box-shadow: 0 2px 4px #00000006; }
+.blog-card__meta { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .5rem; color: var(--muted); font-size: .8rem; }
+.blog-card__meta > span { font-weight: 600; }
+.blog-card__meta time { padding: 0; background: transparent; }
+.archive .blog-card__title, .archive .teaching-row__title {
+  font-family: Georgia, "Times New Roman", serif; font-size: 1.4rem; line-height: 1.3; font-weight: 400;
+}
+.archive .blog-card__title { margin: .7rem 0 .6rem; }
+.archive .blog-card__title a, .archive .teaching-row__title a { color: var(--ink) !important; text-decoration: none; font-weight: inherit; }
+.archive .blog-card__title a:hover, .archive .teaching-row__title a:hover { color: var(--accent) !important; text-decoration: underline; }
+.archive .blog-card__summary { margin: 0 0 .75rem; font-size: .95rem; line-height: 1.7; }
+.archive .blog-card__link { font-size: .85rem; text-decoration: none; }
+.archive .blog-card__link:hover { text-decoration: underline; }
+.teaching-list { margin-top: 1.75rem; }
+.teaching-row {
+  display: grid; grid-template-columns: 52px minmax(0, 1fr) 180px;
+  gap: 1rem; align-items: start; padding: 1.25rem 0; border-bottom: 1px solid var(--line);
+}
+.teaching-row:first-child { padding-top: 0; }
+.teaching-row:last-child { border-bottom: 0; }
+.teaching-row__year { font-size: .85rem; color: var(--muted); padding-top: .25rem; }
+.archive .teaching-row__title { margin: 0 0 .4rem; font-size: 1.25rem; }
+.archive .teaching-row__summary { margin: 0; color: var(--muted); font-size: .9rem; line-height: 1.6; }
+.archive .teaching-row__context { margin: .15rem 0 0; font-size: .8rem; line-height: 1.6; }
+.teaching-row__context span { display: block; margin-top: .25rem; color: var(--muted); }
+@media (max-width: 1100px) {
+  .teaching-row { grid-template-columns: 48px minmax(0, 1fr); gap: .5rem 1rem; }
+  .teaching-row__context { grid-column: 2; }
+}
+@media (max-width: 640px) {
+  .talks-grid { padding: 0; }
+  .talk-card { max-width: none; }
+  .blog-card { padding: 1rem; }
+  .archive .blog-card__title { font-size: 1.25rem; }
+  .teaching-row { grid-template-columns: 1fr; gap: .35rem; }
+  .teaching-row__context { grid-column: 1; }
+}
+
+.archive .talk-card__title, .archive .blog-card__title, .archive .teaching-row__title { border: 0; padding-bottom: 0; }

@@ -1,0 +1,21 @@
+<article class="talk-card">
+  {% if post.header.teaser %}
+    {% assign thumbnail = post.header.teaser %}
+    {% unless thumbnail contains '://' %}
+      {% assign first_character = thumbnail | slice: 0 %}
+      {% if first_character == '/' %}
+        {% assign thumbnail = thumbnail | prepend: base_path %}
+      {% else %}
+        {% assign thumbnail = thumbnail | prepend: '/images/' | prepend: base_path %}
+      {% endif %}
+    {% endunless %}
+    <a class="talk-card__thumbnail" href="{{ base_path }}{{ post.url }}" tabindex="-1" aria-hidden="true">
+      <img src="{{ thumbnail }}" alt="" loading="lazy" width="640" height="400">
+    </a>
+  {% endif %}
+  <div class="talk-card__body">
+    <p class="talk-card__meta"><time datetime="{{ post.date | date: '%Y-%m-%d' }}">{{ post.date | date: '%Y' }}</time>{% if post.venue %} &middot; {{ post.venue }}{% endif %}</p>
+    <h2 class="talk-card__title"><a href="{{ base_path }}{{ post.url }}">{{ post.title | escape }}</a></h2>
+    {% if post.type or post.location %}<p class="talk-card__context">{{ post.type }}{% if post.type and post.location %} &middot; {% endif %}{{ post.location }}</p>{% endif %}
+  </div>
+</article>

@@ -6,6 +6,7 @@ permalink: /teaching/2020-utec-oop
 venue: "University of Engineering and Technology (UTEC)"
 date: 2020-01-01
 location: "Lima, Peru"
+excerpt: "Delivered supplementary lectures, graded coursework, and supported students in object oriented programming."
 ---
 
 In 2020, I was the teaching assistant for the Object Oriented Programming course at UTEC (University of Engineering and Technology) in Lima, Peru. My responsibilities included delivering extra lectures, grading assignments and exams, and providing support to students by answering their questions throughout the semester.

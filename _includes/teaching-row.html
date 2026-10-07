@@ -1,0 +1,8 @@
+<article class="teaching-row">
+  <time class="teaching-row__year" datetime="{{ post.date | date: '%Y' }}">{{ post.date | date: '%Y' }}</time>
+  <div class="teaching-row__body">
+    <h2 class="teaching-row__title"><a href="{{ base_path }}{{ post.url }}">{{ post.title | escape }}</a></h2>
+    {% if post.excerpt %}<p class="teaching-row__summary">{{ post.excerpt | strip_html }}</p>{% endif %}
+  </div>
+  <p class="teaching-row__context">{{ post.venue }}{% if post.location %}<span>{{ post.location }}</span>{% endif %}</p>
+</article>
