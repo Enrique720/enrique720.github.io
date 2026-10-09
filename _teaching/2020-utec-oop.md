@@ -1,7 +1,7 @@
 ---
-title: "Object Oriented Programming TA"
+title: "Teaching Assistant — Object Oriented Programming"
 collection: teaching
-type: "Course"
+type: "Teaching Assistant"
 permalink: /teaching/2020-utec-oop
 venue: "University of Engineering and Technology (UTEC)"
 date: 2020-01-01

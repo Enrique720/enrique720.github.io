@@ -17,7 +17,7 @@ redirect_from:
   <div class="hero-actions mt-8 flex flex-wrap gap-3">
     <a class="cta-link rounded border border-phosphor/40 bg-phosphor/10 px-4 py-3 font-mono text-xs uppercase tracking-[.18em] text-phosphor no-underline transition hover:bg-phosphor hover:text-void" href="/publications/">Publications</a>
     <a class="cta-link cta-link--gold rounded border border-voltage/40 bg-voltage/10 px-4 py-3 font-mono text-xs uppercase tracking-[.18em] text-voltage no-underline transition hover:bg-voltage hover:text-void" href="/portfolio/">Projects</a>
-    <a class="cta-link cta-link--quiet rounded border border-slate-600 px-4 py-3 font-mono text-xs uppercase tracking-[.18em] text-slate-300 no-underline transition hover:border-signal hover:text-signal" href="/files/cv.pdf">CV</a>
+    <a class="cta-link cta-link--quiet rounded border border-slate-600 px-4 py-3 font-mono text-xs uppercase tracking-[.18em] text-slate-300 no-underline transition hover:border-signal hover:text-signal" href="/files/CV_Enrique_Sobrados.pdf">CV</a>
   </div>
 </section>
 

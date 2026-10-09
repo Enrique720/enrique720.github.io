@@ -1,7 +1,7 @@
 ---
-title: "Web Development Bootcamp"
+title: "Instructor — Web Development Bootcamp"
 collection: teaching
-type: "Bootcamp"
+type: "Instructor"
 permalink: /teaching/2021-lewagon
 venue: "Le Wagon: Coding bootcamp"
 date: 2021-07-01
