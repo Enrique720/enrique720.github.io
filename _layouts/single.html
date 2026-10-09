@@ -88,7 +88,7 @@ layout: default
             {% endif %}
             {% if page.venue %}<span><i class="fa-solid fa-building-columns" aria-hidden="true"></i>{{ page.venue }}</span>{% endif %}
             {% if page.location %}<span><i class="fa-solid fa-location-dot" aria-hidden="true"></i>{{ page.location }}</span>{% endif %}
-            {% if page.modified %}<span><i class="fa-solid fa-calendar" aria-hidden="true"></i>{{ page.modified | date: "%B %Y" }}</span>{% elsif page.date %}<span><i class="fa-solid fa-calendar" aria-hidden="true"></i>{{ page.date | date: "%B %Y" }}</span>{% endif %}
+            {% if page.term %}<span><i class="fa-solid fa-calendar" aria-hidden="true"></i>{{ page.term }}</span>{% elsif page.modified %}<span><i class="fa-solid fa-calendar" aria-hidden="true"></i>{{ page.modified | date: "%B %Y" }}</span>{% elsif page.date %}<span><i class="fa-solid fa-calendar" aria-hidden="true"></i>{{ page.date | date: "%B %Y" }}</span>{% endif %}
             {% if page.read_time %}<span><i class="fa-solid fa-clock" aria-hidden="true"></i>{% include read-time.html %}</span>{% endif %}
           </div>
           <div class="detail-content">
