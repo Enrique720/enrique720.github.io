@@ -37,4 +37,4 @@ For researchers and providers, the study highlights protocol coexistence as a de
 
 This note summarizes the paper listed in my publications for **IEEE S&P 2027**.
 
-[Paper details and citation](/publication/2027-probe-resistant-vpn-coexistence)
+[Read the S&P paper](/files/papers/sp_weak_link.pdf) · [Paper details and citation](/publication/2027-probe-resistant-vpn-coexistence)
