@@ -9,7 +9,6 @@ venue: 'IEEE Symposium on Security and Privacy (S&P Oakland)'
 acceptance_rate: '15.8%'
 authors: '<strong>Enrique Sobrados</strong>, Muhammad Danish, Jack Vanlyssel, Roya Ensafi, and Afsah Anwar'
 citation: '<strong>Enrique Sobrados</strong>, Muhammad Danish, Jack Vanlyssel, Roya Ensafi, and Afsah Anwar. Exposing Probe-Resistant VPNs via Protocol Coexistence. In IEEE Symposium on Security and Privacy (S&P Oakland), 2027.'
-paperurl: '/files/papers/sp_weak_link.pdf'
 ---
 
 # ABSTRACT
