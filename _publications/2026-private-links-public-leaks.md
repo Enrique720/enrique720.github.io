@@ -6,6 +6,7 @@ permalink: /publication/2026-private-links-public-leaks
 excerpt: ''
 date: 2026-11-01
 venue: 'ACM Conference on Computer and Communications Security (CCS)'
+acceptance_rate: '16.72%'
 paperurl: 'https://arxiv.org/pdf/2601.09232'
 authors: 'Muhammad Danish, <strong>Enrique Sobrados</strong>, Priya Kaushik, Bhupendra Acharya, Muhammad Saad, Abdullah Mueen, Sazzadur Rahaman, and Afsah Anwar'
 citation: 'Muhammad Danish, <strong>Enrique Sobrados</strong>, Priya Kaushik, Bhupendra Acharya, Muhammad Saad, Abdullah Mueen, Sazzadur Rahaman, and Afsah Anwar. The Tragedy of Convenience: Cascading User-Data Leakage from SMS-delivered URLs. In ACM Conference on Computer and Communications Security (CCS), 2026.'

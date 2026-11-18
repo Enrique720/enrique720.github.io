@@ -18,8 +18,9 @@
   {% assign bib_authors = author_src | split: ', ' | join: ' and ' %}
 {% endif %}
 
-{% assign bib_title = pub.title | strip_html | strip %}
-{% assign bib_booktitle = pub.venue | strip_html | strip %}
+{% comment %} A bare & breaks LaTeX: spell it out between words, escape it elsewhere (e.g. S&P). {% endcomment %}
+{% assign bib_title = pub.title | strip_html | strip | replace: ' & ', ' and ' | replace: '&', '\&' %}
+{% assign bib_booktitle = pub.venue | strip_html | strip | replace: ' & ', ' and ' | replace: '&', '\&' %}
 {% assign bib_year = pub.date | date: '%Y' %}
 
 {% if pub.bibtex_key %}

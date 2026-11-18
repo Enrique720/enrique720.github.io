@@ -46,15 +46,17 @@ redirect_from:
 <section class="security-card section-panel mt-6 rounded-lg border border-slate-700/50 bg-slate-950/62 p-6">
   <p class="section-kicker mb-3 font-mono text-xs uppercase tracking-[.24em] text-phosphor">updates</p>
   <div class="update-list grid gap-3">
-    <div class="update-item border-l-2 border-phosphor/60 pl-4"><strong>January 2026:</strong> Awarded the NDSS 2026 fellowship. See you in San Diego.</div>
-    <div class="update-item border-l-2 border-voltage/60 pl-4"><strong>December 2025:</strong> LoboSec CTF team obtained 3rd place in Alamo CTF 2025.</div>
-    <div class="update-item border-l-2 border-signal/60 pl-4"><strong>September 2025:</strong> Presented VPN security research at a University of New Mexico colloquium.</div>
-    <div class="update-item border-l-2 border-phosphor/60 pl-4"><strong>September 2025:</strong> VPN security paper accepted at NDSS 2026.</div>
-    <div class="update-item border-l-2 border-voltage/60 pl-4"><strong>May 2025:</strong> Started a CTF group at UNM: <a href="https://lobosec.unm.edu">lobosec</a>.</div>
+    <div class="update-item border-l-2 border-phosphor/60 pl-4"><strong>September 2026:</strong> VPN probe-resistance paper accepted at IEEE S&amp;P 2027 (A/R: 15.8%).</div>
+    <div class="update-item border-l-2 border-voltage/60 pl-4"><strong>July 2026:</strong> SMS-delivered URLs paper accepted at ACM CCS 2026 (A/R: 16.72%).</div>
+    <div class="update-item border-l-2 border-signal/60 pl-4"><strong>January 2026:</strong> Awarded the NDSS 2026 fellowship. See you in San Diego.</div>
+    <div class="update-item border-l-2 border-phosphor/60 pl-4"><strong>December 2025:</strong> LoboSec CTF team obtained 3rd place in Alamo CTF 2025.</div>
+    <div class="update-item border-l-2 border-voltage/60 pl-4"><strong>September 2025:</strong> VPN security paper accepted at NDSS 2026 (A/R: 17.89%).</div>
   </div>
   <details class="updates-more mt-3">
     <summary>See more</summary>
     <div class="update-list mt-3 grid gap-3">
+      <div class="update-item border-l-2 border-slate-600 pl-4"><strong>September 2025:</strong> Presented VPN security research at a University of New Mexico colloquium.</div>
+      <div class="update-item border-l-2 border-slate-600 pl-4"><strong>May 2025:</strong> Started a CTF group at UNM: <a href="https://lobosec.unm.edu">lobosec</a>.</div>
       <div class="update-item border-l-2 border-slate-600 pl-4"><strong>March 2025:</strong> Gave a guest lecture at the University of New Mexico on "Introduction to Penetration Testing".</div>
       <div class="update-item border-l-2 border-slate-600 pl-4"><strong>September 2024:</strong> Visited the University of Michigan, Ann Arbor, for a research collaboration.</div>
       <div class="update-item border-l-2 border-slate-600 pl-4"><strong>August 2024:</strong> Attended USENIX Security 24 conference.</div>
