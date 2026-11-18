@@ -10,7 +10,7 @@ redirect_from:
 <section class="security-card hero-card relative overflow-hidden rounded-lg border border-slate-700/50 bg-slate-950/70 p-6 shadow-terminal md:p-10">
   <h2 class="mb-6 max-w-2xl text-3xl font-black leading-none text-slate-50">About Me</h2>
   <p class="max-w-3xl text-lg leading-8 text-slate-300">
-    I am a motivated second year Ph.D. student at <a href="https://unm.edu">The University of New Mexico</a>, Albuquerque, NM.
+    I am a motivated third year Ph.D. student at <a href="https://unm.edu">The University of New Mexico</a>, Albuquerque, NM.
     I started my Ph.D. program in Fall 2024. I am very passionate about cybersecurity, with penetration testing being one of
     my favorite fields. For that reason, you will find me playing a lot on Hack the Box.
   </p>
